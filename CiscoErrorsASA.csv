@@ -1,0 +1,1872 @@
+severity,ErrorID,Description
+1,101001,(Primary) Failover cable OK.
+1,101002,(Primary) Bad failover cable.
+1,101003,(Primary) Failover cable not connected (this unit).
+1,101005,(Primary) Error reading failover cable status.
+1,103001,(Primary) No response from other firewall (reason code = code).
+1,103002,(Primary) Other firewall network interface interface_number OK.
+1,103003,(Primary) Other firewall network interface interface_number failed.
+1,103004,(Primary) Other firewall reports this firewall failed. Reason: reason-string
+1,103005,(Primary) Other firewall reporting failure. Reason: SSM card failure
+1,103006,(Primary|Secondary) Mate version ver_num is not compatible with ours ver_num
+1,103007,(Primary|Secondary) Mate version ver_num is not identical with ours ver_num
+1,103008,Mate hwdib index is not compatible
+1,104001,(Primary) Switching to ACTIVE (cause: string ).
+1,104003,(Primary) Switching to FAILED.
+1,104004,(Primary) Switching to OK.
+1,104500,(Primary|Secondary) Switching to ACTIVE (cause: reason)
+1,104501,(Primary|Secondary) Switching to BACKUP (cause: reason).
+1,104502,(Primary|Secondary) Becoming Backup unit failed.
+1,105001,(Primary) Disabling failover.
+1,105002,(Primary) Enabling failover.
+1,105003,(Primary) Monitoring on interface interface_name waiting
+1,105004,(Primary) Monitoring on interface interface_name normal
+1,105005,(Primary) Lost Failover communications with mate on interface interface_name.
+1,105006,(Primary) Link status Up on interface interface_name.
+1,105008,(Primary) Testing interface interface_name.
+1,105009,(Primary) Testing on interface interface_name {Passed|Failed}.
+3,105010,(Primary) Failover message block alloc failed.
+1,105011,(Primary) Failover cable communication failure
+1,105020,(Primary) Incomplete/slow config replication
+1,105021,(failover_unit ) Standby unit failed to sync due to a locked context_name config. Lock held by lock_owner_name
+1,105031,Failover LAN interface is up
+1,105032,LAN Failover interface is down
+1,105033,LAN FO cmd Iface down and up again
+1,105034,Receive a LAN_FAILOVER_UP message from peer.
+1,105035,Receive a LAN failover interface down msg from peer.
+1,105036,dropped a LAN Failover command message.
+1,105037,The primary and standby units are switching back and forth as the active unit.
+1,105038,(Primary) Interface count mismatch
+1,105039,(Primary) Unable to verify the Interface count with mate. Failover may be disabled in mate.
+1,105040,(Primary) Mate failover version is not compatible.
+1,105041,cmd failed during sync
+1,105042,(Primary) Failover interface OK
+1,105043,(Primary) Failover interface failed
+1,105044,(Primary) Mate operational mode mode is not compatible with my mode mode.
+1,105045,(Primary) Mate license (number contexts) is not compatible with my license (number contexts).
+1,105046,(Primary|Secondary) Mate has a different chassis
+1,105047,Mate has a io_card_name1 card in slot slot_number which is different from my io_card_name2
+1,105048,(unit ) Mate’s service module (application ) is different from mine (application )
+3,105050,ASAv ethernet interface mismatch
+5,105500,(Primary|Secondary) Started HA.
+5,105501,(Primary|Secondary) Stopped HA.
+1,105502,(Primary|Secondary) Restarting Cloud HA on this unit, reason: string.
+5,105503,(Primary|Secondary) Internal state change from previous_state to new_state
+5,105504,(Primary|Secondary) Connected to peer peer-ip:port
+4,105505,(Primary|Secondary) Failed to connect to peer unit peer-ip:port
+2,105506,(Primary|Secondary) Unable to create socket on port port for (failover connection | load balancer probes), error: error_string
+2,105507,(Primary|Secondary) Unable to bind socket on port port for (failover connection | load balancer probes), error: error_string
+2,105508,(Primary|Secondary) Error creating failover connection socket on port port
+3,105509,(Primary|Secondary) Error sending message_name message to peer unit peer-ip, error: error_string
+3,105510,(Primary|Secondary) Error receiving message from peer unit peer-ip, error: error_string
+3,105511,(Primary|Secondary) Incomplete read of message header of message from peer unit peer-ip: bytes bytes read of expected header_length header bytes.
+3,105512,(Primary|Secondary) Error receiving message body of message from peer unit peer-ip, error: error_string
+3,105513,(Primary|Secondary) Incomplete read of message body of message from peer unit peer-ip: bytes bytes read of expected message_length message body bytes
+3,105514,(Primary|Secondary) Error occurred when responding to message_name message received from peer unit peer-ip, error: error_string
+3,105515,(Primary|Secondary) Error receiving message_name message from peer unit peer-ip, error: error_string
+3,105516,(Primary|Secondary) Incomplete read of message header of message_name message from peer unit peer-ip: bytes bytes read of expected header_length header bytes
+3,105517,(Primary|Secondary) Error receiving message body of message_name message from peer unit peer-ip, error: error_string
+3,105518,(Primary|Secondary) Incomplete read of message body of message_name message from peer unit peer-ip: bytes bytes read of expected message_length message body bytes
+3,105519,(Primary|Secondary) Invalid response to message_name message received from peer unit peer-ip: type message_type, version message_version, length message_length
+5,105520,(Primary|Secondary) Responding to Azure Load Balancer probes
+5,105521,(Primary|Secondary) No longer responding to Azure Load Balancer probes
+5,105522,(Primary|Secondary) Updating route route_table_name
+5,105523,(Primary|Secondary) Updated route route_table_name
+4,105524,(Primary|Secondary) Transitioning to Negotiating state due to the presence of another Active HA unit.
+4,105524,(Primary|Secondary) Transitioning to Negotiating state due to the presence of another Active HA unit.
+2,105525,(Primary|Secondary) Incomplete configuration to initiate access token change request.
+2,105526,(Primary|Secondary) Unexpected status in response to access token request: status_string.
+2,105527,(Primary|Secondary) Failure reading response to access token request
+2,105528,(Primary|Secondary) No access token in response to access token request
+2,105529,(Primary|Secondary) Error creating authentication header from access token
+2,105530,(Primary|Secondary) No response to access token request url
+2,105531,(Primary|Secondary) Failed to obtain route-table information needed for change request for route-table route_table_name
+2,105532,(Primary|Secondary) Unexpected status in response to route-table change request for route-table route_table_name: status_string
+2,105533,(Primary|Secondary) Failure reading response to route-table change request for route-table route_table_name
+2,105534,(Primary|Secondary) No provisioning state in response to route-table change request route-table route_table_name
+2,105535,(Primary|Secondary) No response to route-table change request for route-table route_table_name from url
+2,105536,(Primary|Secondary) Failed to obtain Azure authentication header for route status request for route route_name
+2,105537,(Primary|Secondary) Unexpected status in response to route state request for route route_name: status_string
+2,105538,(Primary|Secondary) Failure reading response to route state request for route route_name
+2,105539,(Primary|Secondary) No response to route state request for route route_name from url
+2,105540,(Primary|Secondary) No route-tables configured
+2,105541,(Primary|Secondary) Failed to update route-table route_table_name, provisioning state: state_string
+5,105542,(Primary|Secondary) Enabling load balancer probe responses
+5,105543,(Primary|Secondary) Disabling load balancer probe responses
+2,105544,(Primary|Secondary) Error creating load balancer probe socket on port port
+3,105545,(Primary|Secondary) Error starting load balancer probe socket on port port, error code: error_code
+3,105546,(Primary|Secondary) Error starting load balancer probe handler
+3,105547,(Primary|Secondary) Error generating encryption key for Azure secret key
+3,105548,(Primary|Secondary) Error storing encryption key for Azure secret key
+3,105549,(Primary|Secondary) Error retrieving encryption key for Azure secret key
+3,105550,(Primary|Secondary) Error encrypting Azure secret key
+3,105551,(Primary|Secondary) Error encrypting Azure secret key
+5,105552,(Primary|Secondary) Stopped HA
+4,105553,(Primary|Secondary) Detected another Active HA unit
+2,106001,Inbound TCP connection denied from IP_address/port to IP_address/port flags tcp_flags on interface interface_name
+2,106002,protocol Connection denied by outbound list acl_ID src inside_address dest outside_address
+2,106006,Deny inbound UDP from outside_address/outside_port to inside_address/inside_port on interface interface_name.
+2,106007,Deny inbound UDP from outside_address/outside_port to inside_address/inside_port due to DNS {Response|Query}.
+3,106010,Deny inbound protocol src [interface_name : source_address/source_port ] [([idfw_user | FQDN_string ], sg_info )] dst [interface_name : dest_address /dest_port }[([idfw_user | FQDN_string ], sg_info )]
+3,106011,Deny inbound (No xlate) string
+6,106012,Deny IP from IP_address to IP_address , IP options hex.
+2,106013,Dropping echo request from IP_address to PAT address IP_address
+3,106014,Deny inbound icmp src interface_name : IP_address [([idfw_user | FQDN_string ], sg_info )] dst interface_name : IP_address [([idfw_user | FQDN_string ], sg_info )] (type dec , code dec )
+6,106015,Deny TCP (no connection) from IP_address /port to IP_address /port flags tcp_flags on interface interface_name.
+2,106016,Deny IP spoof from (IP_address ) to IP_address on interface interface_name.
+2,106017,Deny IP due to Land Attack from IP_address to IP_address
+2,106018,ICMP packet type ICMP_type denied by outbound list acl_ID src inside_address dest outside_address
+2,106020,Deny IP teardrop fragment (size = number, offset = number) from IP_address to IP_address
+1,106021,Deny protocol reverse path check from source_address to dest_address on interface interface_name
+1,106022,Deny protocol connection spoof from source_address to dest_address on interface interface_name
+4,106023,Deny protocol src [interface_name :source_address /source_port ] [([idfw_user |FQDN_string ], sg_info )] dst interface_name :dest_address /dest_port [([idfw_user |FQDN_string ], sg_info )] [type {string }, code {code }] by access_group acl_ID [0x8ed66b60, 0xf8852875]
+2,106024,Access rules memory exhausted
+6,106025,Failed to determine the security context for the packet:sourceVlan:source_address dest_address source_port dest_port protocol
+4,106027,acl_ID: Deny src [source address] dst [destination address] by access-group “access-list name"
+6,106100,access-list acl_ID {permitted | denied | est-allowed} protocol interface_name /source_address (source_port ) (idfw_user , sg_info ) interface_name /dest_address (dest_port ) (idfw_user , sg_info ) hit-cnt number ({first hit | number -second interval}) hash codes
+1,106101,Number of cached deny-flows for ACL log has reached limit (number ).
+6,106102,access-list acl_ID {permitted|denied} protocol for user username interface_name /source_address source_port interface_name /dest_address dest_port hit-cnt number {first hit|number -second interval} hash codes
+4,106103,access-list acl_ID denied protocol for user username interface_name /source_address source_port interface_name /dest_address dest_port hit-cnt number first hit hash codes
+1,107001,RIP auth failed from IP_address : version=number, type=string, mode=string, sequence=number on interface interface_name
+1,107002,RIP pkt failed from IP_address : version=number on interface interface_name
+2,108002,SMTP replaced string: out source_address in inside_address data: string
+2,108003,Terminating ESMTP/SMTP connection; malicious pattern detected in the mail address from source_interface:source_address/source_port to dest_interface:dest_address/dset_port . Data:string
+4,108004,action_class: action ESMTP req_resp from src_ifc:sip |sport to dest_ifc:dip |dport;further_info
+6,108005,action_class: Received ESMTP req_resp from src_ifc:sip |sport to dest_ifc:dip |dport;further_info
+7,108006,Detected ESMTP size violation from src_ifc:sip |sport to dest_ifc:dip |dport; declared size is: decl_size, actual size is act_size.
+6,108007,TLS started on ESMTP session between client client-side interface-name : client IP address /client port and server server-side interface-name : server IP address /server port
+6,109001,Auth start for user user from inside_address/inside_port to outside_address/outside_port
+6,109002,Auth from inside_address/inside_port to outside_address/outside_port failed (server IP_address failed) on interface interface_name.
+6,109003,Auth from inside_address to outside_address/outside_port failed (all servers failed) on interface interface_name, so marking all servers ACTIVE again.
+6,109005,Authentication succeeded for user user from inside_address/inside_port to outside_address/outside_port on interface interface_name.
+6,109006,Authentication failed for user user from inside_address/inside_port to outside_address/outside_port on interface interface_name.
+6,109007,Authorization permitted for user user from inside_address/inside_port to outside_address/outside_port on interface interface_name.
+6,109008,Authorization denied for user user from outside_address/outside_port to inside_address/ inside_port on interface interface_name.
+3,109010,Auth from inside_address/inside_port to outside_address/outside_port failed (too many pending auths) on interface interface_name.
+2,109011,Authen Session Start: user 'user ', sid number
+5,109012,Authen Session End: user 'user', sid number, elapsed number seconds
+3,109013,User must authenticate before using this service
+7,109014,A non-Telnet connection was denied to the configured virtual Telnet IP address.
+3,109016,Can't find authorization ACL acl_ID for user 'user '
+4,109017,User at IP_address exceeded auth proxy connection limit (max)
+3,109018,Downloaded ACL acl_ID is empty
+3,109019,Downloaded ACL acl_ID has parsing error; ACE string
+3,109020,Downloaded ACL has config error; ACE
+7,109021,Uauth null proxy error
+4,109022,exceeded HTTPS proxy process limit
+3,109023,User from source_address /source_port to dest_address /dest_port on interface outside_interface must authenticate before using this service.
+6,109024,Authorization denied from source_address /source_port to dest_address /dest_port (not authenticated) on interface interface_name using protocol
+6,109025,Authorization denied (acl=acl_ID) for user 'user' from source_address /source_port to dest_address /dest_port on interface interface_name using protocol
+3,109026,[aaa protocol ] Invalid reply digest received; shared server key may be mismatched.
+4,109027,[aaa protocol] Unable to decipher response message Server = server_IP_address , User = user
+4,109028,aaa bypassed for same-security traffic from ingress_ interface:source_address/source_port to egress_interface:dest_address/dest_port
+5,109029,Parsing downloaded ACL: string
+4,109030,Autodetect ACL convert wildcard did not convert ACL access_list source |dest netmask netmask .
+4,109031,NT Domain Authentication Failed: rejecting guest login for username .
+3,109032,Unable to install ACL access_list , downloaded for user username ; Error in ACE: ace .
+4,109033,Authentication failed for admin user user from src_IP . Interactive challenge processing is not supported for protocol connections
+4,109034,Authentication failed for network user user from src_IP/port to dst_IP/port . Interactive challenge processing is not supported for protocol connections
+3,109035,Exceeded maximum number (<max_num>) of DAP attribute instances for user <user>
+6,109036,Exceeded 1000 attribute values for the attribute name attribute for user username .
+3,109037,Exceeded 5000 attribute values for the attribute name attribute for user username .
+3,109038,Attribute internal-attribute-name value string-from-server from AAA server could not be parsed as a type internal-attribute-name string representation of the attribute name
+5,109039,AAA Authentication:Dropping an unsupported IPv6/IP46/IP64 packet from lifc :laddr to fifc :faddr
+4,109040,User at IP exceeded auth proxy rate limit of 10 connections/sec
+6,109100,Received CoA update from coa-source-ip for user username , with session ID: audit-session-id , changing authorization attributes
+6,109101,Received CoA disconnect request from coa-source-ip for user username , with audit-session-id: audit-session-id
+4,109102,Received CoA action-type from coa-source-ip , but cannot find named session audit-session-id
+3,109103,CoA action-type from coa-source-ip failed for user username , with session ID: audit-session-id .
+3,109104,CoA action-type from coa-source-ip failed for user username , session ID: audit-session-id . Action not supported.
+3,109105,Failed to determine the egress interface for locally generated traffic destined to <protocol> <IP>:<port>.
+6,110002,Failed to locate egress interface for protocol from src interface :src IP/src port to dest IP/dest port
+6,110003,Routing failed to locate next-hop for protocol from src interface :src IP/src port to dest interface :dest IP/dest port
+6,110004,Egress interface changed from old_active_ifc to new_active_ifc on ip_protocol connection conn_id for outside_zone /parent_outside_ifc :outside_addr /outside_port (mapped_addr /mapped_port ) to inside_zone /parent_inside_ifc :inside_addr /inside_port (mapped_addr /mapped_port )
+5,111001,Begin configuration: IP_address writing to device
+5,111002,Begin configuration: IP_address reading from device
+5,111003,IP_address Erase configuration
+5,111004,IP_address end configuration: {FAILED|OK}
+5,111005,IP_address end configuration: OK
+5,111007,Begin configuration: IP_address reading from device.
+5,111008,User user executed the command string
+7,111009,User user executed cmd:string
+5,111010,User username , running application-name from IP ip addr , executed cmd
+1,111111,error_message
+2,112001,(string :dec ) Clear complete.
+3,113001,Unable to open AAA session. Session limit [limit ] reached.
+6,113003,AAA group policy for user user is being set to policy_name .
+6,113004,AAA user aaa_type Successful: server = server_IP_address , User = user
+6,113005,AAA user authentication Rejected: reason = AAA failure: server = ip_addr : user = *****: user IP = ip_addr
+6,113005,AAA user authentication Rejected: reason = AAA failure: server = ip_addr : user = *****: user IP = ip_addr
+6,113006,User user locked out on exceeding number successive failed authentication attempts
+6,113007,User user unlocked by administrator
+6,113008,AAA transaction status ACCEPT: user = user
+6,113009,AAA retrieved default group policy policy for user user
+6,113010,AAA challenge received for user user from server server_IP_address
+6,113011,AAA retrieved user specific group policy policy for user user
+6,113012,AAA user authentication Successful: local database: user = user
+6,113013,AAA unable to complete the request Error: reason = reason : user = user
+6,113014,AAA authentication server not accessible: server = server_IP_address : user = user
+6,113015,AAA user authentication Rejected: reason = reason : local database: user = user: user IP = xxx.xxx.xxx.xxx
+6,113016,AAA credentials rejected: reason = reason : server = server_IP_address : user = user<915CLI>: user IP = xxx.xxx.xxx.xxx
+6,113017,AAA credentials rejected: reason = reason : local database: user = user: user IP = xxx.xxx.xxx.xxx
+3,113018,User: user , Unsupported downloaded ACL Entry: ACL_entry , Action: action
+4,113019,Group = group , Username = username , IP = peer_address , Session disconnected. Session Type: type , Duration: duration , Bytes xmt: count , Bytes rcv: count , Reason: reason
+3,113020,Kerberos error: Clock skew with server ip_address greater than 300 seconds
+3,113021,Attempted console login failed. User username did NOT have appropriate Admin Rights.
+2,113022,AAA Marking RADIUS server servername in aaa-server group AAA-Using-DNS as FAILED
+2,113023,AAA Marking protocol server ip-addr in server group tag as ACTIVE
+5,113024,Group tg : Authenticating type connection from ip with username, user_name , from client certificate
+5,113025,Group tg : fields Could not authenticate connection type connection from ip
+4,113026,Error error while executing Lua script for group tunnel group
+2,113027,Error activating tunnel-group scripts
+7,113028,Extraction of username from VPN client certificate has string. [Request num ]
+4,113029,Group group User user IP ipaddr Session could not be established: session limit of num reached
+4,113030,Group group User user IP ipaddr User ACL acl from AAA doesn't exist on the device, terminating connection.
+4,113031,Group group User user IP ipaddr AnyConnect vpn-filter filter is an IPv6 ACL; ACL not applied.
+4,113032,Group group User user IP ipaddr AnyConnect ipv6-vpn-filter filter is an IPv4 ACL; ACL not applied.
+6,113033,Group group User user IP ipaddr AnyConnect session not allowed. ACL parse error.
+4,113034,Group group User user IP ipaddr User ACL acl from AAA ignored, AV-PAIR ACL used instead.
+4,113035,Group group User user IP ipaddr Session terminated: AnyConnect not enabled or invalid AnyConnect image on the ASA.
+4,113036,Group group User user IP ipaddr AAA parameter name value invalid.
+6,113037,Reboot pending, new sessions disabled. Denied user login.
+4,113038,Group group User user IP ipaddr Unable to create AnyConnect parent session.
+6,113039,Group group User user IP ipaddr AnyConnect parent session started.
+4,113040,Terminating the VPN connection attempt from attempted group . Reason: This connection is group locked to locked group.
+4,113041,Redirect ACL configured for assigned IP does not exist on the device.
+4,113042,CoA: Non-HTTP connection from src_if :src_ip /src_port to dest_if :dest_ip /dest_port for user username at client_IP denied by redirect filter; only HTTP connections are supported for redirection.
+6,113045,AAA SDI server IP_address in aaa-server group group_name: status changed from previous-state to current-state
+1,114001,Failed to initialize 4GE SSM I/O card (error error_string ).
+1,114002,Failed to initialize SFP in 4GE SSM I/O card (error error_string ).
+1,114003,Failed to run cached commands in 4GE SSM I/O card (error error_string ).
+6,114004,4GE SSM I/O Initialization start.
+6,114005,4GE SSM I/O Initialization end.
+3,114006,Failed to get port statistics in 4GE SSM I/O card (error error_string ).
+3,114007,Failed to get current msr in 4GE SSM I/O card (error error_string ).
+3,114008,Failed to enable port after link is up in 4GE SSM I/O card due to either I2C serial bus access error or switch access error.
+3,114009,Failed to set multicast address in 4GE SSM I/O card (error error_string ).
+3,114010,Failed to set multicast hardware address in 4GE SSM I/O card (error error_string ).
+3,114011,Failed to delete multicast address in 4GE SSM I/O card (error error_string ).
+3,114012,Failed to delete multicast hardware address in 4GE SSM I/O card (error error_string ).
+3,114013,Failed to set mac address table in 4GE SSM I/O card (error error_string ).
+3,114014,Failed to set mac address in 4GE SSM I/O card (error error_string ).
+3,114015,Failed to set mode in 4GE SSM I/O card (error error_string ).
+3,114016,Failed to set multicast mode in 4GE SSM I/O card (error error_string ).
+3,114017,Failed to get link status in 4GE SSM I/O card (error error_string ).
+3,114018,Failed to set port speed in 4GE SSM I/O card (error error_string ).
+3,114019,Failed to set media type in 4GE SSM I/O card (error error_string ).
+3,114020,Port link speed is unknown in 4GE SSM I/O card.
+3,114021,Failed to set multicast address table in 4GE SSM I/O card due to error .
+3,114022,Failed to pass broadcast traffic in 4GE SSM I/O card due to error_string
+3,114023,Failed to cache/flush mac table in 4GE SSM I/O card due to error_string .
+2,115000,Critical assertion in process: process name fiber: fiber name , component: component name , subcomponent: subcomponent name , file: filename , line: line number , cond: condition
+3,115001,Error in process: process name fiber: fiber name , component: component name , subcomponent: subcomponent name , file: filename , line: line number , cond: condition
+4,115002,Warning in process: process name fiber: fiber name , component: component name , subcomponent: subcomponent name , file: filename , line: line number , cond: condition
+5,120001,Smart Call-Home Module is started.
+5,120002,Smart Call-Home Module is terminated.
+6,120003,Process event group title
+4,120004,Event group title is dropped. Reason reason
+4,120005,Message group to destination is dropped. Reason reason
+4,120006,Delivering message group to destination failed. Reason reason
+6,120007,Message group to destination delivered.
+5,120008,SCH client client is activated.
+5,120009,SCH client client is deactivated.
+3,120010,Notify command command to SCH client client failed. Reason reason .
+4,120011,To ensure Smart Call Home can properly communicate with Cisco, use the command dns name-server to configure at least one DNS server.
+5,120012,User username chose to choice call-home anonymous reporting at the prompt.
+5,121001,msgId id. Telemetry support on the chassis: status.
+5,121002,Telemetry support on the blade: status.
+6,121003,msgId id. Telemetry request from the chassis received. SSE connector status: connector status. Telemetry config on the blade: blade status. Telemetry data data status.
+5,199001,Reload command executed from Telnet (remote IP_address ).
+6,199002,startup completed. Beginning operation.
+6,199003,Reducing link MTU dec .
+6,199005,Startup begin
+1,199010,Signal 11 caught in process/fiber(rtcli async executor process)/(rtcli async executor) at address 0xf132e03b, corrective action at 0xca1961a0
+2,199011,Close on bad channel in process/fiber process/fiber , channel ID p , channel state s process/fiber name of the process/fiber that caused the bad channel close operation.
+1,1199012,Stack smash during new_stack_call in process/fiber process/fiber , call target f , stack size s , process/fiber name of the process/fiber that caused the stack smash
+1,199013,syslog
+2,199014,syslog
+3,199015,syslog
+4,199016,syslog
+5,199017,syslog
+6,199018,syslog
+7,199019,syslog
+2,199020,System memory utilization has reached X %. System will reload if memory usage reaches the configured trigger level of Y %.
+1,199021,System memory utilization has reached the configured watchdog trigger level of Y %. System will now reload
+5,199027,Restore operation was aborted at <HH:MM:SS> UTC <DD:MM:YY>3,201002,Too many TCP connections on {static|xlate} global_address ! econns nconns
+2,201003,Embryonic limit exceeded nconns/elimit for outside_address/outside_port (global_address ) inside_address /inside_port on interface interface_name
+3,201004,Too many UDP connections on {static|xlate} global_address!udp connections limit
+3,201005,FTP data connection failed for IP_address IP_address
+3,201006,RCMD backconnection failed for IP_address/port.
+3,201008,Disallowing new connections.
+3,201009,TCP connection limit of number for host IP_address on interface_name exceeded
+6,201010,Embryonic connection limit exceeded econns/limit for dir packet from source_address/source_port to dest_address/dest_port on interface interface_name
+3,201011,Connection limit exceeded cnt /limit for dir packet from sip /sport to dip /dport on interface if_name .
+6,201012,Per-client embryonic connection limit exceeded curr num /limit for [input|output] packet from IP_address / port to ip /port on interface interface_name
+3,201013,Per-client connection limit exceeded curr num /limit for [input|output] packet from ip /port to ip /port on interface interface_name
+3,202001,Out of address translation slots!
+3,202005,Non-embryonic in embryonic list outside_address/outside_port inside_address/inside_port
+3,202010,[NAT | PAT] pool exhausted for pool-name , port range [1-511 | 512-1023 | 1024-65535]. Unable to create protocol connection from in-interface :src-ip /src-port to out-interface :dst-ip /dst-port
+3,202016,"%d: Unable to pre-allocate SIP %s secondary channel for message" \ "from %s:%A/%d to %s:%A/%d with PAT and missing port information.\n"
+3,208005,(function:line_num) clear command return code
+4,209003,Fragment database limit of number exceeded: src = source_address , dest = dest_address , proto = protocol , id = number
+4,209004,Invalid IP fragment, size = bytes exceeds maximum size = bytes : src = source_address , dest = dest_address , proto = protocol , id = number
+4,209005,Discard IP fragment set with more than number elements: src = Too many elements are in a fragment set.
+4,209006,Fragment queue threshold exceeded, dropped TCP fragment from IP address/port to IP address/port on outside interface.
+3,210001,LU sw_module_name error = number
+3,210002,LU allocate block (bytes ) failed.
+3,210003,Unknown LU Object number
+3,210005,LU allocate secondary (optional ) connection failed for protocol [TCP |UDP ] connection from ingress interface name :Real IP Address /Real Port to egress interface name :Real IP Address /Real Port
+3,210006,LU look NAT for IP_address failed
+3,210007,LU allocate xlate failed for type [static | dynamic ]-[NAT | PAT ] secondary(optional) protocol translation from ingress interface name :Real IP Address /real port (Mapped IP Address /Mapped Port ) to egress interface name :Real IP Address /Real Port (Mapped IP Address /Mapped Port )
+3,210008,LU no xlate for inside_address /inside_port outside_address /outside_port
+3,210010,LU make UDP connection for outside_address :outside_port inside_address :inside_port failed
+3,210020,LU PAT port port reserve failed
+3,210021,LU create static xlate global_address ifc interface_name failed
+6,210022,LU missed number updates
+3,211001,Memory allocation Error
+3,211003,Error in computed percentage CPU usage value
+1,211004,WARNING: Minimum Memory Requirement for ASA version ver not met for ASA image. min MB required, actual MB found.
+3,212001,Unable to open SNMP channel (UDP port port ) on interface interface_number , error code = code
+3,212002,Unable to open SNMP trap channel (UDP port port ) on interface interface_number , error code = code
+3,212003,Unable to receive an SNMP request on interface interface_number , error code = code , will try again.
+3,212004,Unable to send an SNMP response to IP Address IP_address Port port interface interface_number , error code = code
+3,212005,incoming SNMP request (number bytes) on interface interface_name exceeds data buffer size, discarding this SNMP request.
+3,212006,Dropping SNMP request from src_addr /src_port to ifc :dst_addr /dst_port because: reason username
+5,212009,Configuration request for SNMP group groupname failed. User username , reason .
+3,212010,Configuration request for SNMP user %s failed. Host %s reason .
+3,212011,SNMP engineBoots is set to maximum value. Reason : %s User intervention necessary.
+3,212012,Unable to write SNMP engine data to persistent storage.
+3,213001,PPTP control daemon socket io string , errno = number .
+3,213002,PPTP tunnel hashtable insert failed, peer = IP_address .
+3,213003,PPP virtual interface interface_number isn't opened.
+3,213004,PPP virtual interface interface_number client ip allocation failed.
+3,213005,: Dynamic-Access-Policy action (DAP) action aborted
+3,213006,: Unable to read dynamic access policy record.
+4,213007,L2TP: Failed to install Redirect URL: redirect URL Redirect ACL: non_exist for assigned IP .
+2,214001,Terminating manager session from IP_address on interface interface_name . Reason: incoming encrypted data (number bytes) longer than number bytes
+2,215001,Bad route_compress() call, sdb = number
+2,217001,No memory for string in string
+n,216001,internal error in: function : message
+3,216002,Unexpected event (major: major_id , minor: minor_id ) received by task_string in function at line: line_num
+3,216003,Unrecognized timer timer_ptr , timer_id received by task_string in function at line: line_num
+4,216004,prevented: error in function at file (line ) - stack trace
+1,216005,ERROR: Duplex-mismatch on interface_name resulted in transmitter lockup. A soft reset of the switch was performed.
+2,218001,Failed Identification Test in slot# [fail #/res ].
+2,218002,Module (slot# ) is a registered proto-type for Cisco Lab use only, and not certified for live network operation.
+2,218003,Module Version in slot# is obsolete. The module in slot = slot# is obsolete and must be returned via RMA to Cisco Manufacturing. If it is a lab unit, it must be returned to Proto Services for upgrade.
+2,218004,Failed Identification Test in slot# [fail# /res ]
+2,218005,Inconsistency detected in the system information programmed in non-volatile memory
+3,219002,I2C_API_name error, slot = slot_number , device = device_number , address = address , byte count = count . Reason: reason_string6,302003,Built H245 connection for foreign_address outside_address /outside_port local_address inside_address /inside_port
+6,302004,Pre-allocate H323 UDP backconnection for foreign_address outside_address /outside_port to local_address inside_address /inside_port
+6,302010,connections in use, connections most used
+6,302012,Pre-allocate H225 Call Signalling Connection for faddr IP_address /port to laddr IP_address
+6,302013,Built {inbound|outbound} [Probe] TCP connection_id for interface :real-address /real-port (mapped-address/mapped-port ) [(idfw_user )] to interface :real-address /real-port (mapped-address/mapped-port ) [(idfw_user )] [(user )]
+6,302014,Teardown [Probe] TCP connection id for interface :real-address /real-port [(idfw_user )] to interface :real-address /real-port [(idfw_user )] duration hh:mm:ss bytes bytes [reason [from teardown-initiator]] [(user )]
+6,302015,Built {inbound|outbound} UDP connection number for interface_name :real_address /real_port (mapped_address /mapped_port ) [(idfw_user )] to interface_name :real_address /real_port (mapped_address /mapped_port )[(idfw_user )] [(user )]
+6,302016,Teardown UDP connection number for interface :real-address /real-port [(idfw_user )] to interface :real-address /real-port [(idfw_user )] duration hh :mm :ss bytes bytes [(user )]
+6,302017,Built {inbound|outbound} GRE connection id from interface :real_address (translated_address ) [(idfw_user )] to interface :real_address /real_cid (translated_address /translated_cid ) [(idfw_user )] [(user )
+6,302018,Teardown GRE connection id from interface :real_address (translated_address ) [(idfw_user )] to interface :real_address /real_cid (translated_address /translated_cid ) [(idfw_user )] duration hh :mm :ss bytes bytes [(user )]
+3,302019,H.323 library_name ASN Library failed to initialize, error code number
+6,302020,Built {in | out} bound ICMP connection for faddr {faddr | icmp_seq_num } [(idfw_user )] gaddr {gaddr | icmp_type } laddr laddr [(idfw_user )] type {type } code {code }
+6,302021,Teardown ICMP connection for faddr {faddr | icmp_seq_num } [(idfw_user )] gaddr {gaddr | icmp_type } laddr laddr [(idfw_user )] type {type } code {code }
+6,302022,Built role stub TCP connection for interface :real-address /real-port (mapped-address /mapped-port ) to interface :real-address /real-port (mapped-address /mapped-port)
+6,302023,Teardown stub TCP connection for interface :real-address /real-port to interface :real-address /real-port duration hh:mm:ss forwarded bytes bytes reason
+6,302024,Built role stub UDP connection for interface :real-address /real-port (mapped-address /mapped-port ) to interface :real-address /real-port (mapped-address /mapped-port )
+6,302025,Teardown stub UDP connection for interface :real-address /real-port to interface :real-address /real-port duration hh:mm:ss forwarded bytes bytes reason
+6,302026,Built role stub ICMP connection for interface :real-address /real-port (mapped-address ) to interface :real-address /real-port (mapped-address )
+6,302027,Teardown stub ICMP connection for interface :real-address /real-port to interface :real-address /real-port duration hh:mm:ss forwarded bytes bytes reason
+6,302033,Pre-allocated H323 GUP Connection for faddr interface :foreign address /foreign-port to laddr interface :local-address /local-port
+4,302034,Unable to pre-allocate H323 GUP Connection for faddr interface :foreign address /foreign-port to laddr interface :local-address /local-port
+6,302035,Built {inbound|outbound} SCTP connection conn_id for outside_interface :outside_ip /outside_port (mapped_outside_ip /mapped_outside_port )[([outside_idfw_user ],[outside_sg_info ])] to inside_interface :inside_ip /inside_port (mapped_inside_ip /mapped_inside_port )[([inside_idfw_user ],[inside_sg_info ])] [(user )]
+6,302036,Teardown SCTP connection conn_id for outside_interface :outside_ip /outside_port [([outside_idfw_user ],[outside_sg_info ])] to inside_interface :inside_ip /inside_port [([inside_idfw_user ],[inside_sg_info ])] duration time bytes bytes reason [(user )]
+3,302302,ACL = deny; no sa created
+6,302303,Built TCP state-bypass connection conn_id from initiator_interface :real_ip /real_port (mapped_ip /mapped_port ) to responder_interface :real_ip /real_port (mapped_ip /mapped_port )
+6,302304,Teardown TCP state-bypass connection conn_id from initiator_interface :ip/port to responder_interface :ip/port duration , bytes , teardown reason .
+6,302305,Built SCTP state-bypass connection conn_id for outside_interface :outside_ip /outside_port (mapped_outside_ip /mapped_outside_port )[([outside_idfw_user ],[outside_sg_info ])] to inside_interface :inside_ip /inside_port (mapped_inside_ip /mapped_inside_port )[([inside_idfw_user ],[inside_sg_info ])]
+6,302306,Teardown SCTP state-bypass connection conn_id for outside_interface :outside_ip /outside_port [([outside_idfw_user ],[outside_sg_info ])] to inside_interface :inside_ip /inside_port [([inside_idfw_user ],[inside_sg_info ])] duration time bytes bytes reason
+4,302311,Failed to create a new protocol connection from ingress interface:source IP/source port to egress interface:destination IP/destination port due to application cache memory allocation failure. The app-cache memory threshold level is threshold% and threshold check is enabled/disabled.
+6,303002,FTP connection from src_ifc :src_ip /src_port to dst_ifc :dst_ip /dst_port , user username action file filename
+5,303004,FTP cmd_string command unsupported - failed strict inspection, terminating connection from source_interface :source_address /source_port to dest_interface :dest_address/dest_interface
+5,303005,Strict FTP inspection matched match_string in policy-map policy-name , action_string from src_ifc :sip /sport to dest_ifc :dip /dport
+5,304001,user@source_address [(idfw_user )] Accessed URL dest_address : url .
+5,304002,Access denied URL chars SRC IP_address [(idfw_user )] DEST IP_address : chars
+3,304003,URL Server IP_address timed out URL url
+6,304004,URL Server IP_address request failed URL url
+7,304005,URL Server IP_address request pending URL url
+3,304006,URL Server IP_address not responding
+2,304007,URL Server IP_address not responding, ENTERING ALLOW mode.
+2,304008,LEAVING ALLOW mode, URL Server is up.
+7,304009,Ran out of buffer blocks specified by url-block command
+3,305005,No translation group found for protocol src interface_name: source_address/source_port [(idfw_user )] dst interface_name: dest_address /dest_port [(idfw_user )]
+3,305006,{outbound static|identity|portmap|regular) translation creation failed for protocol src interface_name:source_address/source_port [(idfw_user )] dst interface_name:dest_address/dest_port [(idfw_user )]
+6,305007,addrpool_free(): Orphan IP IP_address on interface interface_number
+3,305008,Free unallocated global IP address.
+6,305009,Built {dynamic|static} translation from interface_name [(acl-name)]:real_address [(idfw_user )] to interface_name :mapped_address
+6,305010,Teardown {dynamic|static} translation from interface_name :real_address [(idfw_user )] to interface_name :mapped_address duration time
+6,305011,Built {dynamic|static} {TCP|UDP|ICMP} translation from interface_name :real_address/real_port [(idfw_user )] to interface_name :mapped_address/mapped_port
+6,305012,Teardown {dynamic|static} {TCP|UDP|ICMP} translation from interface_name [(acl-name )]:real_address /{real_port |real_ICMP_ID } [(idfw_user )] to interface_name :mapped_address /{mapped_port |mapped_ICMP_ID } duration time
+5,305013,Asymmetric NAT rules matched for forward and reverse flows; Connection protocol src interface_name :source_address /source_port [(idfw_user )] dst interface_name :dst_address /dst_port [(idfw_user )] denied due to NAT reverse path failure.
+6,305014,Allocated block of ports for translation from real_interface :real_host_ip /real_source_port to real_dest_interface :real_dest_ip /real_dest_port.
+3,305016,Unable to create protocol connection from real_interface :real_host_ip /real_source_port to real_dest_interface :real_dest_ip /real_dest_port due to reason .
+3,305017,Pba-interim-logging: Active ICMP block of ports for translation from <source device IP> to <destination device IP>/<Active Port Block>
+6,305018,MAP translation from src_ifc:src_ip/src_port-dst_ifc:dst_ip/dst_port to src_ifc:translated_src_ip/src_port-dst_ifc:translated_dst_ip/dst_port
+3,305019,MAP node address ip/port has inconsistent Port Set ID encoding
+3,305020,MAP node with address ip is not allowed to use port port\n
+6,308001,console enable password incorrect for number tries (from IP_address )
+4,308002,static global_address inside_address netmask netmask overlapped with global_address inside_address
+4,308003,WARNING: The enable password is not configured
+4,308004,The enable password has been configured by user admin
+6,311001,LU loading standby start
+6,311002,LU loading standby end
+6,311003,LU recv thread up
+6,311004,LU xmit thread up
+6,312001,RIP hdr failed from IP_address : cmd=string , version=number domain=string on interface interface_name
+3,313001,Denied ICMP type=number , code=code from IP_address on interface interface_name
+4,313004,Denied ICMP type=icmp_type , from source_address on interface interface_name to dest_address :no matching session
+4,313005,No matching connection for ICMP error message: icmp_msg_info on interface_name interface. Original IP payload: embedded_frame_info icmp_msg_info = icmp src src_interface_name :src_address [([idfw_user | FQDN_string ], sg_info )] dst dest_interface_name :dest_address [([idfw_user | FQDN_string ], sg_info )] (type icmp_type, code icmp_code ) embedded_frame_info = prot src source_address /source_port [([idfw_user | FQDN_string ], sg_info )] dst dest_address /dest_port [(idfw_user |FQDN_string ), sg_info ]
+3,313008,Denied ICMPv6 type=number , code=code from IP_address on interface interface_name
+4,313009,Denied invalid ICMP code icmp-code , for src-ifc :src-address /src-port (mapped-src-address/mapped-src-port) to dest-ifc :dest-address /dest-port (mapped-dest-address/mapped-dest-port) [user ], ICMP id icmp-id , ICMP type icmp-type
+6,314001,Pre-allocated RTSP UDP backconnection for src_intf :src_IP to dst_intf :dst_IP /dst_port.
+6,314002,RTSP failed to allocate UDP media connection from src_intf :src_IP to dst_intf :dst_IP /dst_port : reason_string.
+6,314003,Dropped RTSP traffic from src_intf :src_ip due to: reason.
+6,314004,RTSP client src_intf:src_IP accessed RTSP URL RTSP URL
+6,314005,RTSP client src_intf:src_IP denied access to URL RTSP_URL.
+6,314006,RTSP client src_intf:src_IP exceeds configured rate limit of rate for request_method messages.
+3,315004,Fail to establish SSH session because RSA host key retrieval failed.
+6,315011,SSH session from IP_address on interface interface_name for user user disconnected by SSH server, reason: reason
+3,315012,Weak SSH type (alg) provided from client IP_address on interface Int. Connection failed. Not FIPS 140-2 compliant.
+6,315013,SSH session from <SSH client address> on interface <interface name> for user “<user name>" rekeyed successfully.
+3,316001,Denied new tunnel to IP_address . VPN peer limit (platform_vpn_peer_limit) exceeded
+3,316002,VPN Handle error: protocol=protocol , src in_if_num :src_addr , dst out_if_num :dst_addr
+3,317001,No memory available for limit_slow
+3,317002,Bad path index of number for IP_address , number max
+3,317003,IP routing table creation failure - reason
+3,317004,IP routing table limit warning
+3,317005,IP routing table limit exceeded - reason , IP_address netmask
+3,317006,Pdb index error pdb , pdb_index , pdb_type
+6,317007,Added route_type route dest_address netmask via gateway_address [distance /metric ] on interface_name route_type
+6,317008,Deleted route_type route dest_address netmask via gateway_address [distance /metric ] on interface_name route_type
+3,317012,Interface IP route counter negative - nameif-string-value
+3,318001,Internal error: reason
+3,318002,Flagged as being an ABR without a backbone area
+3,318003,Reached unknow n state in neighbor state machine
+3,318004,area string lsid IP_address mask netmask adv IP_address type number
+3,318005,lsid ip_address adv IP_address type number gateway gateway_address metric number network IP_address mask netmask protocol hex attr hex net-metric number
+3,318006,if interface_name if_state number
+3,318007,OSPF is enabled on interface_name during idb initialization
+3,318008,OSPF process number is changing router-id. Reconfigure virtual link neighbors with our new router-id
+3,318009,OSPF: Attempted reference of stale data encountered in function , line: line_num
+3,318101,Internal error: REASON
+3,318102,Flagged as being an ABR without a backbone area
+3,318103,Reached unknown state in neighbor state machine
+3,318104,DB already exist: area AREA_ID_STR lsid i adv i type 0x x
+3,318105,lsid i adv i type 0x x gateway i metric d network i mask i protocol #x attr #x net-metric d
+3,318106,if IF_NAME if_state d
+3,318107,OSPF is enabled on IF_NAME during idb initialization
+3,318108,OSPF process d is changing router-id. Reconfigure virtual link neighbors with our new router-id
+3,318109,OSPFv3 has received an unexpected message: 0x / 0x
+3,318110,Invalid encrypted key s .
+3,318111,SPI u is already in use with ospf process d
+3,318112,SPI u is already in use by a process other than ospf process d .
+3,318113,s s is already configured with SPI u .
+3,318114,The key length used with SPI u is not valid
+3,318115,s error occured when attempting to create an IPsec policy for SPI u
+3,318116,SPI u is not being used by ospf process d .
+3,318117,The policy for SPI u could not be removed because it is in use.
+3,318118,s error occured when attemtping to remove the IPsec policy with SPI u
+3,318119,Unable to close secure socket with SPI u on interface s
+3,318120,OSPFv3 was unable to register with IPsec
+3,318121,IPsec reported a GENERAL ERROR: message s , count d
+3,318122,IPsec sent a s message s to OSPFv3 for interface s . Recovery attempt d
+3,318123,IPsec sent a s message s to OSPFv3 for interface IF_NAME . Recovery aborted
+3,318125,Init failed for interface IF_NAME
+3,318126,Interface IF_NAME is attached to more than one area
+3,318127,Could not allocate or find the neighbor
+3,319001,Acknowledge for arp update for IP address dest_address not received (number ).
+3,319002,Acknowledge for route update for IP address dest_address not received (number ).
+3,319003,Arp update for IP address address to NPn failed.
+3,319004,Route update for IP address dest_address failed (number ).
+3,320001,The subject name of the peer cert is not allowed for connection
+5,321001,Resource var1 limit of var2 reached.
+5,321002,Resource var1 rate limit of var2 reached.
+6,321003,Resource var1 log level of var2 reached.
+6,321004,Resource var1 rate log level of var2 reached
+2,321005,System CPU utilization reached utilization %
+2,321006,System memory usage reached utilization %
+3,321007,System is low on free memory blocks of size block_size (free_blocks CNT out of max_blocks MAX)
+3,322001,Deny MAC address MAC_address, possible spoof attempt on interface interface
+3,322002,ARP inspection check failed for arp {request|response} received from host MAC_address on interface interface . This host is advertising MAC Address MAC_address_1 for IP Address IP_address , which is {statically|dynamically} bound to MAC Address MAC_address_2 .
+3,322003,ARP inspection check failed for arp {request|response} received from host MAC_address on interface interface . This host is advertising MAC Address MAC_address_1 for IP Address IP_address , which is not bound to any MAC Address.
+6,322004,No management IP address configured for transparent firewall. Dropping protocol protocol packet from interface_in :source_address /source_port to interface_out :dest_address /dest_port
+3,323001,Module module_id experienced a control channel communications failure.
+3,323002,Module module_id is not able to shut down, shut down request not answered.
+3,323003,Module module_id is not able to reload, reload request not answered.
+3,323004,Module string one failed to write software newver (currently ver ), reason . Hw-module reset is required before further use.
+3,323005,Module module_id can not be started completely
+1,323006,Module ips experienced a data channel communication failure, data channel is DOWN.
+3,323007,Module in slot slot experienced a firware failure and the recovery is in progress.
+3,324000,Drop GTPv version message msg_type from source_interface :source_address /source_port to dest_interface:dest_address/dest_port Reason: reason
+3,324001,GTPv0 packet parsing error from source_interface :source_address /source_port to dest_interface :dest_address /dest_port , TID: tid_value , Reason: reason
+3,324002,No PDP[MCB] exists to process GTPv0 msg_type from source_interface :source_address /source_port to dest_interface :dest_address /dest_port , TID: tid_value
+3,324003,No matching request to process GTPv version msg_type from source_interface:source_address/source_port to source_interface:dest_address/dest_port
+3,324004,GTP packet with version%d from source_interface :source_address /source_port to dest_interface :dest_address /dest_port is not supported
+3,324005,Unable to create tunnel from source_interface :source_address /source_port to dest_interface :dest_address /dest_port
+3,324006,GSN IP_address tunnel limit tunnel_limit exceeded, PDP Context TID tid failed
+3,324007,Unable to create GTP connection for response from source_address /0 to dest_address /dest_port
+3,324008,No PDP exists to update the data sgsn [ggsn] PDPMCB Info REID: teid_value , Request TEID; teid_value , Local GSN: IPaddress (VPIfNum ), Remove GSN: IPaddress (VPIfNum )
+5,324010,Subscriber IMSI PDP Context activated on network MCC/MNC mccmnc (IE type[/IE type]) [CellID cellID] 
+5,324011,Subscriber IMSI location changed during handoff from MCC/MNC mccmnc (IE type[/IE type]) [CellID cellID] to MCC/MNC mccmnc (IE type[/IE type]) [CellID cellID]
+3,324300,Radius Accounting Request from from_addr has an incorrect request authenticator
+3,324301,Radius Accounting Request has a bad header length hdr_len , packet length pkt_len
+3,325001,Router ipv6_address on interface has conflicting ND (Neighbor Discovery) settings
+4,325002,Duplicate address ipv6_address/MAC_address on interface
+4,325004,IPv6 Extension Header hdr_type action configuration. protocol from src_int :src_ipv6_addr /src_port to dst_interface : dst_ipv6_addr /dst_port .
+4,325005,Invalid IPv6 Extension Header Content: string . detail regarding protocol, ingress and egress interface
+4,325006,IPv6 Extension Header not in order: Type hdr_type occurs after Type hdr_type . TCP prot from inside src_int : src_ipv6_addr /src_port to dst_interface :dst_ipv6_addr /dst_port
+3,326001,Unexpected error in the timer library: error_message
+3,326002,Error in error_message : error_message
+3,326004,An internal error occurred while processing a packet queue
+3,326005,Mrib notification failed for (IP_address, IP_address )
+3,326006,Entry-creation failed for (IP_address, IP_address )
+3,326007,Entry-update failed for (IP_address, IP_address )
+3,326008,MRIB registration failed
+3,326009,MRIB connection-open failed
+3,326010,MRIB unbind failed
+3,326011,MRIB table deletion failed
+3,326012,Initialization of string functionality failed
+3,326013,Internal error: string in string line %d (%s )
+3,326014,Initialization failed: error_message error_message
+3,326015,Communication error: error_message error_message
+3,326016,Failed to set un-numbered interface for interface_name (string )
+3,326017,Interface Manager error - string in string : string
+3,326019,string in string : string
+3,326020,List error in string : string
+3,326021,Error in string : string
+3,326022,Error in string : string
+3,326023,string - IP_address : string
+3,326024,An internal error occurred while processing a packet queue.
+3,326025,string
+3,326026,Server unexpected error: error_message
+3,326027,Corrupted update: error_message
+3,326028,Asynchronous error: error_message
+3,327001,IP SLA Monitor: Cannot create a new process
+3,327002,IP SLA Monitor: Failed to initialize, IP SLA Monitor functionality will not work
+3,327003,IP SLA Monitor: Generic Timer wheel timer functionality failed to initialize
+3,328001,Attempt made to overwrite a set stub function in string .
+3,328002,Attempt made in string to register with out of bounds key
+3,329001,The string0 subblock named string1 was not removed
+3,331001,Dynamic DNS Update for 'fqdn_name ' = ip_address failed
+5,331002,Dynamic DNS type RR for ('fqdn_name ' - ip_address | ip_address - 'fqdn_name ') successfully updated in DNS server dns_server_ip
+3,332001,Unable to open cache discovery socket, WCCP V2 closing down.
+3,332002,Unable to allocate message buffer, WCCP V2 closing down.
+5,332003,Web Cache IP_address /service_ID acquired
+1,332004,Web Cache IP_address /service_ID lost
+6,333001,EAP association initiated - context: EAP-context
+5,333002,Timeout waiting for EAP response - context:EAP-context
+6,333003,EAP association terminated - context:EAP-context
+7,333004,EAP-SQ response invalid - context:EAP-context
+7,333005,EAP-SQ response contains invalid TLV(s) - context:EAP-context
+7,333006,EAP-SQ response with missing TLV(s) - context:EAP-context
+7,333007,EAP-SQ response TLV has invalid length - context:EAP-context
+7,333008,EAP-SQ response has invalid nonce TLV - context:EAP-context
+6,333009,EAP-SQ response MAC TLV is invalid - context:EAP-context
+5,333010,EAP-SQ response Validation Flags TLV indicates PV request - context:EAP-context
+6,334001,EAPoUDP association initiated - host-address
+5,334002,EAPoUDP association successfully established - host-address
+5,334003,EAPoUDP association failed to establish - host-address
+6,334004,Authentication request for NAC Clientless host - host-address
+5,334005,Host put into NAC Hold state - host-address
+5,334006,EAPoUDP failed to get a response from host - host-address
+6,334007,EAPoUDP association terminated - host-address
+6,334008,NAC EAP association initiated - host-address , EAP context: EAP-context
+6,334009,Audit request for NAC Clientless host - Assigned_IP.
+6,335001,NAC session initialized - host-address
+5,335002,Host is on the NAC Exception List - host-address , OS: oper-sys
+5,335003,NAC Default ACL applied, ACL:ACL-name - host-address
+6,335004,NAC is disabled for host - host-address
+4,335005,NAC Downloaded ACL parse failure - host-address
+6,335006,NAC Applying ACL: ACL-name - host-address
+7,335007,NAC Default ACL not configured - host-address
+5,335008,NAC IPsec terminate from dynamic ACL: ACL-name - host-address
+6,335009,NAC Revalidate request by administrative action - host-address
+6,335010,NAC Revalidate All request by administrative action - num sessions
+6,335011,NAC Revalidate Group request by administrative action for group-name group - num sessions
+6,335012,NAC Initialize request by administrative action - host-address
+6,335013,NAC Initialize All request by administrative action - num sessions
+6,335014,NAC Initialize Group request by administrative action for group-name group - num sessions
+3,336001,Route desination_network stuck-in-active state in EIGRP-ddb_name as_num. Cleaning up
+3,336002,Handle handle_id is not allocated in pool.
+3,336003,No buffers available for bytes byte packet
+3,336004,Negative refcount in pakdesc pakdesc.
+3,336005,Flow control error, error , on interface_name.
+3,336006,num peers exist on IIDB interface_name.
+3,336007,Anchor count negative
+3,336008,Lingering DRDB deleting IIDB, dest network, nexthop address (interface), origin origin_str
+3,336009,ddb_name as_id: Internal Error
+5,336010,EIGRP-ddb_name tableid as_id: Neighbor address (%interface) is event_msg: msg
+6,336011,event event
+3,336012,Interface interface_names going down and neighbor_links links exist
+3,336013,Route iproute, iproute_successors successors, db_successors rdbs
+3,336014,“EIGRP_PDM_Process_name, event_log”
+3,336015,“Unable to open socket for AS as_number”
+3,336016,Unknown timer type timer_type expiration
+3,336019,process_name as_number: prefix_source threshold prefix level (prefix_threshold) reached
+6,337000,Created BFD session with local discriminator <id> on <real_interface> with neighbor <real_host_ip>
+6,337001,Terminated BFD session with local discriminator <id> on <real_interface> with neighbor <real_host_ip> due to <failure_reason>
+4,337005,Phone Proxy SRTP: Media session not found for media_term_ip/media_term_port for packet from in_ifc:src_ip/src_port to out_ifc:dest_ip/dest_port
+4,338001,Dynamic filter monitored blacklisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port) to out_interface :dest_ip_addr /dest_port , (mapped-ip /mapped-port), source malicious address resolved from local or dynamic list: domain name, threat-level: level_value, category: category_name
+4,338002,Dynamic filter monitored blacklisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), destination malicious address resolved from local or dynamic list: domain name, threat-level: level_value, category: category_name
+4,338003,Dynamic filter monitored blacklisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port) to out_interface :dest_ip_addr /dest_port , (mapped-ip /mapped-port), source malicious address resolved from local or dynamic list: ip address/netmask, threat-level: level_value, category: category_name
+4,338004,Dynamic filter monitored blacklisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), destination malicious address resolved from local or dynamic list: ip address/netmask, threat-level: level_value, category: category_name
+4,338005,Dynamic filter dropped blacklisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), source malicious address resolved from local or dynamic list: domain name, threat-level: level_value, category: category_name
+4,338006,Dynamic filter dropped blacklisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), destination malicious address resolved from local or dynamic list: domain name, threat-level: level_value, category: category_name
+4,338007,Dynamic filter dropped blacklisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), source malicious address resolved from local or dynamic list: ip address/netmask, threat-level: level_value, category: category_name
+4,338008,Dynamic filter dropped blacklisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), destination malicious address resolved from local or dynamic list: ip address/netmask, threat-level: level_value, category: category_name
+4,338101,Dynamic filter action whitelisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port) to out_interface :dest_ip_addr /dest_port , (mapped-ip /mapped-port), source malicious address resolved from local or dynamic list: domain name
+4,338102,Dynamic filter action whitelisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), destination malicious address resolved from local or dynamic list: domain name
+4,338103,Dynamic filter action whitelisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port) to out_interface :dest_ip_addr /dest_port , (mapped-ip /mapped-port), source malicious address resolved from local or dynamic list: ip address/netmask
+4,338104,Dynamic filter action whitelisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), destination malicious address resolved from local or dynamic list: ip address/netmask
+4,338201,Dynamic filter monitored greylisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port) to out_interface :dest_ip_addr /dest_port , (mapped-ip /mapped-port), source malicious address resolved from local or dynamic list: domain name, threat-level: level_value, category: category_name
+4,338202,Dynamic filter monitored greylisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), destination malicious address resolved from local or dynamic list: domain name, threat-level: level_value, category: category_name
+4,338203,Dynamic filter dropped greylisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), source malicious address resolved from local or dynamic list: domain name, threat-level: level_value, category: category_name
+4,338204,Dynamic filter dropped greylisted protocol traffic from in_interface :src_ip_addr /src_port (mapped-ip /mapped-port ) to out_interface :dest_ip_addr /dest_port (mapped-ip /mapped-port ), destination malicious address resolved from local or dynamic list: domain name, threat-level: level_value, category: category_name
+4,338301,Intercepted DNS reply for domain name from in_interface :src_ip_addr /src_port to out_interface :dest_ip_addr /dest_port , matched list
+5,338302,Address ipaddr discovered for domain name from list , Adding rule
+5,338303,Address ipaddr (name) timed out, Removing rule
+6,338304,Successfully downloaded dynamic filter data file from updater server url
+3,338305,Failed to download dynamic filter data file from updater server url
+3,338306,Failed to authenticate with dynamic filter updater server url
+3,338307,Failed to decrypt downloaded dynamic filter database file
+5,338308,Dynamic filter updater server dynamically changed from old_server_host : old_server_port to new_server_host : new_server_port
+3,338309,The license on this ASA does not support dynamic filter updater feature.
+3,338310,Failed to update from dynamic filter updater server url, reason: reason string
+3,339001,DNSCRYPT certificate update failed for <num_tries> tries
+3,339002,Umbrella device registration failed with error code <err_code>
+3,339003,Umbrella device registration was successful
+3,339004,Umbrella device registration failed due to missing token
+3,339005,Umbrella device registration failed after <num_tries> retries
+3,339006,Umbrella resolver current resolver ipv46 is reachable, resuming Umbrella redirect.
+3,339007,Umbrella resolver current resolver ipv46 is unreachable, moving to fail-open. Starting probe to resolver.
+3,339008,Umbrella resolver current resolver ipv46 is unreachable, moving to fail-close.
+3,340001,Loopback-proxy error: error_string context id context_id , context type = version /request_type /address_type client socket (internal)= client_address_internal /client_port_internal server socket (internal)= server_address_internal /server_port_internal server socket (external)= server_address_external /server_port_external remote socket (external)= remote_address_external /remote_port_external
+6,340002,Loopback-proxy info: error_string context id context_id , context type = version /request_type /address_type client socket (internal)= client_address_internal /client_port_internal server socket (internal)= server_address_internal /server_port_internal server socket (external)= server_address_external /server_port_external remote socket (external)= remote_address_external /remote_port_external
+6,341001,Policy Agent started successfully for VNMC vnmc_ip_addr
+6,341002,Policy Agent stopped successfully for VNMC vnmc_ip_addr
+3,341003,Policy Agent failed to start for VNMC vnmc_ip_addr
+3,341004,Storage device not available: Attempt to shutdown module %s failed.
+3,341005,Storage device not available. Shutdown issued for module %s .
+3,341006,Storage device not available. Failed to stop recovery of module %s .
+3,341007,Storage device not available. Further recovery of module %s was stopped. This may take several minutes to complete.
+3,341008,Storage device not found. Auto-boot of module %s cancelled. Install drive and reload to try again.
+6,341010,Storage device with serial number ser_no [inserted into | removed from] bay bay_no
+3,341011,Storage device with serial number ser_no in bay bay_no faulty.
+7,342001,REST API Agent started successfully.
+3,342002,REST API Agent failed, reason: reason
+3,342003,REST API Agent failure notification received. Agent will be restarted automatically.
+3,342004,Failed to automatically restart the REST API Agent after 5 unsuccessful attempts. Use the 'no rest-api agent' and 'rest-api agent' commands to manually restart the Agent.
+7,342005,REST API image has been installed successfully.
+3,342006,Failed to install REST API image, reason: <reason>.
+7,342007,REST API image has been uninstalled successfully.
+3,342008,Failed to uninstall REST API image, reason: <reason>.4,4000,n: IPS:number string from IP_address to IP_address on interface interface_name
+4,401001,Shuns cleared
+4,401002,Shun added: IP_address IP_address port port
+4,401003,Shun deleted: IP_address
+4,401004,Shunned packet: IP_address = IP_address on interface interface_name
+4,401005,Shun add failed: unable to allocate resources for IP_address IP_address port port
+4,402114,IPSEC: Received an protocol packet (SPI=spi , sequence number=seq_num ) from remote_IP to local_IP with an invalid SPI.
+4,402115,IPSEC: Received a packet from remote_IP to local_IP containing act_prot data instead of exp_prot data.
+4,402116,IPSEC: Received an protocol packet (SPI=spi , sequence number=seq_num ) from remote_IP (username ) to local_IP . The decapsulated inner packet doesn’t match the negotiated policy in the SA. The packet specifies its destination as pkt_daddr , its source as pkt_saddr , and its protocol as pkt_prot . The SA specifies its local proxy as id_daddr /id_dmask /id_dprot /id_dport and its remote proxy as id_saddr /id_smask /id_sprot /id_sport .
+4,402117,IPSEC: Received a non-IPsec (protocol ) packet from remote_IP to local_IP .
+4,402118,IPSEC: Received an protocol packet (SPI=spi , sequence number seq_num ) from remote_IP (username ) to local_IP containing an illegal IP fragment of length frag_len with offset frag_offset .
+4,402119,IPSEC: Received an protocol packet (SPI=spi , sequence number=seq_num ) from remote_IP (username ) to local_IP that failed anti-replay checking.
+4,402120,IPSEC: Received an protocol packet (SPI=spi , sequence number=seq_num ) from remote_IP (username ) to local_IP that failed authentication.
+4,402121,IPSEC: Received an protocol packet (SPI=spi , sequence number=seq_num ) from peer_addr (username ) to lcl_addr that was dropped by IPsec (drop_reason ).
+4,402122,Received a cleartext packet from src_addr to dest_addr that was to be encapsulated in IPsec that was dropped by IPsec (drop_reason ).
+4,402123,CRYPTO: The accel_type hardware accelerator encountered an error (code=error_string ) while executing crypto command command .
+4,402124,CRYPTO: The ASA hardware accelerator encountered an error (Hardware error address, Core, Hardware error code, IstatReg, PciErrReg, CoreErrStat, CoreErrAddr, Doorbell Size, DoorBell Outstanding, SWReset).
+4,402125,The ASA hardware accelerator ring timed out (parameters ).
+4,402126,CRYPTO: The ASA created Crypto Archive File Archive Filename as a Soft Reset was necessary. Please forward this archived information to Cisco.
+4,402127,CRYPTO: The ASA is skipping the writing of latest Crypto Archive File as the maximum # of files, max_number, allowed have been written to archive_directory . Please archive & remove files from Archive Directory if you want more Crypto Archive Files saved.
+5,402128,CRYPTO: An attempt to allocate a large memory block failed, size: size , limit: limit
+6,402129,CRYPTO: An attempt to release a DMA memory block failed, location: address
+6,402130,CRYPTO: Received an ESP packet (SPI = xxxxxxxxxx, sequence number=xxxx) from 172.16.0.1 (user=user) to 192.168.0.2 with incorrect IPsec padding.
+4,402131,CRYPTO: status changing the accel_instance hardware accelerator's configuration bias from old_config_bias to new_config_bias .
+3,402140,CRYPTO: RSA key generation error: modulus len len
+3,402141,CRYPTO: Key zeroization error: key set type , reason reason
+3,402142,CRYPTO: Bulk data op error: algorithm alg , mode mode
+3,402143,CRYPTO: alg type key op
+3,402144,CRYPTO: Digital signature error: signature algorithm sig , hash algorithm hash
+3,402145,CRYPTO: Hash generation error: algorithm hash
+3,402146,CRYPTO: Keyed hash generation error: algorithm hash , key len len
+3,402147,CRYPTO: HMAC generation error: algorithm alg
+3,402148,CRYPTO: Random Number Generator error
+3,402149,CRYPTO: weak encryption type (length ). Operation disallowed. Not FIPS 140-2 compliant
+3,402150,CRYPTO: Deprecated hash algorithm used for RSA operation (hash alg ). Operation disallowed. Not FIPS 140-2 compliant
+4,403101,PPTP session state not established, but received an XGRE packet, tunnel_id=number , session_id=number
+4,403102,PPP virtual interface interface_name rcvd pkt with invalid protocol: protocol , reason: reason .
+4,403103,PPP virtual interface max connections reached.
+4,403104,PPP virtual interface interface_name requires mschap for MPPE.
+4,403106,PPP virtual interface interface_name requires RADIUS for MPPE.
+4,403107,PPP virtual interface interface_name missing aaa server group info
+4,403108,PPP virtual interface interface_name missing client ip address option
+4,403109,Rec'd packet not an PPTP packet. (ip ) dest_address=dest_address, src_addr= source_address, data: string.
+4,403110,PPP virtual interface interface_name , user: user missing MPPE key from aaa server.
+6,403500,PPPoE - Service name 'any' not received in PADO. Intf:interface_name AC:ac_name .
+3,403501,PPPoE - Bad host-unique in PADO - packet dropped. Intf:interface_name AC:ac_name
+3,403502,PPPoE - Bad host-unique in PADS - dropping packet. Intf:interface_name AC:ac_name
+3,403503,PPPoE:PPP link down:reason
+3,403504,PPPoE:No 'vpdn group group_name ' for PPPoE is created
+4,403505,PPPoE:PPP - Unable to set default route to IP_address at interface_name
+4,403506,PPPoE:failed to assign PPP IP_address netmask netmask at interface_name
+3,403507,PPPoE:PPPoE client on interface interface failed to locate PPPoE vpdn group group_name
+4,405001,Received ARP {request | response} collision from IP_address /MAC_address on interface interface_name with existing ARP entry IP_address /MAC_address
+4,405002,Received mac mismatch collision from IP_address /MAC_address for authenticated host
+4,405003,IP address collision detected between host IP_address at MAC_address and interface interface_name , MAC_address .
+4,405101,Unable to Pre-allocate H225 Call Signalling Connection for foreign_address outside_address [/outside_port ] to local_address inside_address [/inside_port ]
+4,405102,Unable to Pre-allocate H245 Connection for foreign_address outside_address [/outside_port ] to local_address inside_address [/inside_port ]
+4,405103,H225 message from source_address/source_port to dest_address /dest_port contains bad protocol discriminator hex
+4,405104,H225 message received from outside_address /outside_port to inside_address /inside_port before SETUP
+4,405105,H323 RAS message AdmissionConfirm received from source_address /source_port to dest_address /dest_port without an AdmissionRequest
+4,405106,H323 num channel is not created from %I/%d to %I/%d %s
+4,405107,H245 Tunnel is detected and connection dropped from %I/%d to %I/%d %s
+4,405201,ILS ILS_message_type from inside_interface:source_IP_address to outside_interface:/destination_IP_address has wrong embedded address embedded_IP_address
+4,405300,Radius Accounting Request received from from_addr is not allowed
+4,405301,Attribute attribute_number does not match for user user_ip
+4,406001,FTP port command low port: IP_address /port to IP_address on interface interface_name
+4,406002,FTP port command different address: IP_address(IP_address ) to IP_address on interface interface_name
+4,407001,Deny traffic for local-host interface_name :inside_address , license limit of number exceeded
+4,407002,Embryonic limit nconns /elimit for through connections exceeded.outside_address /outside_port to global_address (inside_address )/inside_port on interface interface_name
+4,407003,Established limit for RPC services exceeded number
+4,408001,IP route counter negative - reason , IP_address Attempt: number
+4,408002,ospf process id route type update address1 netmask1 [distance1/metric1 ] via source IP :interface1 address2 netmask2 [distance2 /metric2 ] interface2
+4,408003,can't track this type of object hex
+4,408101,KEYMAN : Type encrption_type encryption unknown. Interpreting keystring as literal.
+4,408102,KEYMAN : Bad encrypted keystring for key id key_id.
+4,409001,Database scanner: external LSA IP_address netmask is lost, reinstalls
+4,409002,db_free: external LSA IP_address netmask
+4,409003,Received invalid packet: reason from IP_address , interface_name
+4,409004,Received reason from unknown neighbor IP_address
+4,409005,Invalid length number in OSPF packet from IP_address (ID IP_address ), interface_name
+4,409006,Invalid lsa: reason Type number , LSID IP_address from IP_address , IP_address , interface_name
+4,409007,Found LSA with the same host bit set but using different mask LSA ID IP_address netmask New: Destination IP_address netmask
+4,409008,Found generating default LSA with non-zero mask LSA type: number Mask: netmask metric: number area: string
+4,409009,OSPF process number cannot start. There must be at least one up IP interface, for OSPF to use as router ID
+4,409010,Virtual link information found in non-backbone area: string
+4,409011,OSPF detected duplicate router-id IP_address from IP_address on interface interface_name
+4,409012,Detected router with duplicate router ID IP_address in area string
+4,409013,Detected router with duplicate router ID IP_address in Type-4 LSA advertised by IP_address
+4,409014,No valid authentication send key is available on interface nameif.
+4,409015,Key ID key-id received on interface nameif.
+4,409016,Key chain name key-chain-name on nameif is invalid.
+4,409017,Key ID key-id in key chain key-chain-name is invalid.
+4,409023,Attempting AAA Fallback method method_name for request_type request for user user :Auth-server group server_tag unreachable
+4,409101,Received invalid packet: s from P , s
+4,409102,Received packet with incorrect area from P , s , area AREA_ID_STR , packet area AREA_ID_STR
+4,409103,Received s from unknown neighbor i
+4,409104,Invalid length d in OSPF packet type d from P (ID i ), s
+4,409105,Invalid lsa: s : Type 0x x , Length 0x x , LSID u from i
+4,409106,Found generating default LSA with non-zero mask LSA type: 0x x Mask: i metric: lu area: AREA_ID_STR
+4,409107,OSPFv3 process d could not pick a router-id, please configure manually
+4,409108,Virtual link information found in non-backbone area: AREA_ID_STR
+4,409109,OSPF detected duplicate router-id i from P on interface IF_NAME
+4,409110,Detected router with duplicate router ID i in area AREA_ID_STR
+4,409111,Multiple interfaces (IF_NAME /IF_NAME ) on a single link detected.
+4,409112,Packet not written to the output queue
+4,409113,Doubly linked list linkage is NULL
+4,409114,Doubly linked list prev linkage is NULL x
+4,409115,Unrecognized timer d in OSPF s
+4,409116,Error for timer d in OSPF process s
+4,409117,Can't find LSA database type x , area AREA_ID_STR , interface x
+4,409118,Could not allocate DBD packet
+4,409119,Invalid build flag x for LSA i , type 0x x
+4,409120,Router-ID i is in use by ospf process d
+4,409121,Router is currently an ASBR while having only one area which is a stub area
+4,409122,Could not select a global IPv6 address. Virtual links require at least one global IPv6 address.
+4,409123,Neighbor command allowed only on NBMA networks
+4,409125,Can not use configured neighbor: poll and priority options are allowed only for a NBMA network
+4,409128,OSPFv3-d Area AREA_ID_STR : Router i originating invalid type 0x x LSA, ID u , Metric d on Link ID d Link Type d
+4,410001,UDP DNS request from source_interface :source_address /source_port to dest_interface :dest_address /dest_port ; (label length | domain-name length) 52 bytes exceeds remaining packet length of 44 bytes.
+2,410002,Dropped num DNS responses with mis-matched id in the past sec second(s): from src_ifc :sip /sport to dest_ifc :dip /dport
+4,410003,action_class : action DNS query_response from src_ifc :sip /sport to dest_ifc :dip /dport ; further_info
+6,410004,action_class : action DNS query_response from src_ifc :sip /sport to dest_ifc :dip /dport ; further_info
+4,411001,Line protocol on interface interface_name changed state to up
+4,411002,Line protocol on interface interface_name changed state to down
+4,411003,Configuration status on interface interface_name changed state to downup
+4,411004,Configuration status on interface interface_name changed state to up
+4,411005,Interface variable 1 experienced a hardware transmit hang. The interface has been reset.
+4,412001,MAC MAC_address moved from interface_1 to interface_2
+4,412002,Detected bridge table full while inserting MAC MAC_address on interface interface . Number of entries = num
+4,413001,Module module_id is not able to shut down. Module Error: errnum message
+4,413002,Module module_id is not able to reload. Module Error: errnum message
+4,413003,Module string one is not a recognized type
+4,413004,Module string one failed to write software newver (currently ver ), reason . Trying again.
+4,413005,Module module_id , application is not supported app_name version app_vers type app_type
+4,413006,prod-id Module software version mismatch; slot slot is prod-id version running-vers . Slot slot prod-id requires required-vers .
+1,413007,An unsupported ASA and IPS configuration is installed. mpc_description with ips_description is not supported.
+1,413008,An unsupported combination of the power supply module and the fan module is detected. Two power supply modules are recommended when using ASA 10G and IPS 10G SSPs simultaneously
+3,414001,Failed to save logging buffer using file name filename to FTP server ftp_server_address on interface interface_name : [fail_reason ]
+3,414002,Failed to save logging buffer to flash:/syslog directory using file name: filename : [fail_reason ]
+3,414003,TCP Syslog Server intf : IP_Address /port not responding. New connections are [permitted|denied] based on logging permit-hostdown policy.
+6,414004,TCP Syslog Server intf : IP_Address /port - Connection restored
+3,414005,TCP Syslog Server intf : IP_Address /port connected, New connections are permitted based on logging permit-hostdown policy
+3,414006,TCP Syslog Server configured and logging queue is full. New connections denied based on logging permit-hostdown policy.
+6,414007,TCP Syslog Server connection restored. New connections are allowed.
+6,414008,New connections are now allowed due to change of logging permit-hostdown policy.
+6,415001,HTTP - matched matched_string in policy-map map_name , header field count exceeded connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+6,415002,HTTP - matched matched_string in policy-map map_name , header field length exceeded connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+6,415003,HTTP - matched matched_string in policy-map map_name , body length exceeded connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415004,HTTP - matched matched_string in policy-map map_name , content-type verification failed connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415005,HTTP - matched matched_string in policy-map map_name , URI length exceeded connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415006,HTTP - matched matched_string in policy-map map_name , URI matched connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415007,HTTP - matched matched_string in policy-map map_name , Body matched connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415008,HTTP - matched matched_string in policy-map map_name , header matched connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415009,HTTP - matched matched_string in policy-map map_name , method matched connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415010,matched matched_string in policy-map map_name , transfer encoding matched connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415011,HTTP - policy-map map_name :Protocol violation connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415012,HTTP - matched matched_string in policy-map map_name , Unknown mime-type connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415013,HTTP - policy-map map-name :Malformed chunked encoding connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415014,HTTP - matched matched_string in policy-map map_name , Mime-type in response wasn't found in the accept-types of the request connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415015,HTTP - matched matched_string in policy-map map_name , transfer-encoding unknown connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+4,415016,policy-map map_name :Maximum number of unanswered HTTP requests exceeded connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+6,415017,HTTP - matched_string in policy-map map_name , arguments matched connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415018,HTTP - matched matched_string in policy-map map_name , Header length exceeded connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415019,HTTP - matched matched_string in policy-map map_name , status line matched connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+5,415020,HTTP - matched matched_string in policy-map map_name , a non-ASCII character was matched connection_action from int_type :IP_address /port_num to int_type :IP_address /port_num
+4,416001,Dropped UDP SNMP packet from source_interface :source_IP /source_port to dest_interface :dest_address /dest_port ; version (prot_version ) is not allowed through the firewall
+4,417001,Unexpected event received: number
+4,417004,Filter violation error: conn number (string :string ) in string
+4,417006,No memory for string ) in string . Handling: string
+4,418001,Through-the-device packet to/from management-only network is denied: protocol_string from interface_name IP_address (port) [([idfw_user |FQDN_string ], sg_info )] to interface_name IP_address (port) [(idfw_user |FQDN_string ), sg_info ]
+3,418018,neighbor IP_Address IPv4 Unicast topology base removed from session BGP Notification sent
+3,418019,sent to neighbor IP_Address, Reason: reason, Bytes: count
+3,418040,unsupported or mal-formatted message received from IP_Address
+4,419001,Dropping TCP packet from src_ifc :src_IP /src_port to dest_ifc :dest_IP /dest_port , reason : MSS exceeded, MSS size , data size
+4,419002,Received duplicate TCP SYN from in_interface :src_address /src_port to out_interface :dest_address /dest_port with different initial sequence number.
+4,419003,Cleared TCP urgent flag from out_ifc :src_ip /src_port to in_ifc :dest_ip /dest_port.
+6,419004,TCP connection ID from src_ifc:src_ip/src_port to dst_ifc:dst_ip/dst_port is probed by DCD
+6,419005,TCP connection ID from src_ifc:src_ip/src_port duration hh:mm:ss data bytes,  is kept open by DCD as valid connection
+6,419006,TCP connection ID from src_ifc:src_ip/src_port to dst_ifc:dst_ip/dst_port durationhh:mm:ss data bytes,  DCD probe was not responded from client/server interface ifc_name
+3,420001,IPS card not up and fail-close mode used, dropping ICMP packet ifc_in :SIP to ifc_out :DIP (type ICMP_TYPE , code ICMP_CODE )
+4,420002,IPS requested to drop ICMP packets ifc_in :SIP to ifc_out :DIP (type ICMP_TYPE , code ICMP_CODE )
+4,420003,IPS requested to reset TCP connection from ifc_in :SIP /SPORT to ifc_out :DIP /DPORT
+6,420004,Virtual Sensor sensor_name was added on the AIP SSM
+6,420005,Virtual Sensor sensor_name was deleted from the AIP SSM
+3,420006,Virtual Sensor not present and fail-close mode used, dropping protocol packet from ifc_in:SIP/SPORT to ifc_out:DIP/DPORT
+4,420007,application-string cannot be enabled for the module in slot slot_id . The module’s current software version does not support this feature. Please upgrade the software on the module in slot slot_id to support this feature. Received backplane header version version_number , required backplane header version version_number or higher.
+3,420008,IPS module license disabled and fail-close mode used, dropping packet.
+3,421001,TCP|UDP flow from interface_name :IP_address/port to interface_name :IP_address /port is dropped because application has failed.
+6,421002,TCP|UDP flow from interface_name :IP_address /port to interface_name :IP_address /port bypassed application checking because the protocol is not supported.
+3,421003,Invalid data plane encapsulation.
+7,421004,Failed to inject {TCP|UDP} packet from IP_address /port to IP_address /port
+6,421005,interface_name :IP_address is counted as a user of application
+6,421006,There are number users of application accounted during the past 24 hours.
+3,421007,TCP|UDP flow from interface_name :IP_address /port to interface_name :IP_address /port is skipped because application has failed.
+4,422004,IP SLA Monitor number0 : Duplicate event received. Event number number1
+4,422005,IP SLA Monitor Probe(s) could not be scheduled because clock is not set.
+4,422006,IP SLA Monitor Probe number : string
+4,423001,{Allowed | Dropped} invalid NBNS pkt_type_name with error_reason_str from ifc_name :ip_address /port to ifc_name :ip_address /port .
+4,423002,{Allowed | Dropped} mismatched NBNS pkt_type_name with error_reason_str from ifc_name :ip_address /port to ifc_name :ip_address /port .
+4,423003,{Allowed | Dropped} invalid NBDGM pkt_type_name with error_reason_str from ifc_name :ip_address /port to ifc_name :ip_address /port .
+4,423004,{Allowed | Dropped} mismatched NBDGM pkt_type_name with error_reason_str from ifc_name :ip_address /port to ifc_name :ip_address /port .
+4,423005,{Allowed | Dropped} NBDGM pkt_type_name fragment with error_reason_str from ifc_name :ip_address /port to ifc_name :ip_address /port .
+4,424001,Packet denied protocol_string intf_in :src_ip /src_port [([idfw_user | FQDN_string ], sg_info )] intf_out :dst_ip /dst_port [([idfw_user | FQDN_string ], sg_info )]. [Ingress|Egress] interface is in a backup state.
+4,424002,Connection to the backup interface is denied: protocol_string intf :src_ip /src_port intf :dst_ip /dst_port
+6,425001,Redundant interface redundant _interface_name created.
+6,425002,Redundant interface redundant _interface_name removed.
+6,425003,Interface interface_name added into redundant interface redundant _interface_name .
+6,425004,Interface interface_name removed from redundant interface redundant _interface_name .
+5,425005,Interface interface_name become active in redundant interface redundant _interface_name
+3,425006,Redundant interface redundant _interface_name switch active member to interface_name failed.
+6,426001,PORT-CHANNEL:Interface ifc_name bundled into EtherChannel interface Port-channel num
+6,426002,PORT-CHANNEL:Interface ifc_name unbundled from EtherChannel interface Port-channel num
+6,426003,PORT-CHANNEL:Interface ifc_name1 has become standby in EtherChannel interface Port-channel num
+4,426004,PORT-CHANNEL: Interface ifc_name1 is not compatible with ifc_name and will be suspended (speed of ifc_name1 is X Mbps, Y is 1000 Mbps).
+6,426101,PORT-CHANNEL:Interface ifc_name is allowed to bundle into EtherChannel interface port-channel id by CLACP
+6,426102,PORT-CHANNEL:Interface ifc_name is moved to standby in EtherChannel interface port-channel id by CLACP
+6,426103,PORT-CHANNEL:Interface ifc_name is selected to move from standby to bundle in EtherChannel interface port-channel id by CLACP
+6,426104,PORT-CHANNEL:Interface ifc_name is unselected in EtherChannel interface port-channel id by CLACP
+6,428002,WAAS confirmed from in_interface :src_ip_addr/src_port to out_interface :dest_ip_addr/dest_port , inspection services bypassed on this connection.
+3,429001,CXSC card not up and fail-close mode used. Dropping protocol packet from interface_name :ip_address /port to interface_name :ip_address /port
+4,429002,CXSC service card requested to drop protocol packet from interface_name :ip_address /port to interface_name :ip_address /port
+4,429003,CXSC service card requested to reset TCP connection from interface_name :ip_addr /port to interface_name :ip_addr /port
+3,429004,Unable to set up authentication-proxy rule for the cx action on interface interface_name for policy_type service-policy.
+6,429005,Set up authentication-proxy protocol_type rule for the CXSC action on interface interface_name for traffic destined to ip_address /port for policy_type service-policy.
+6,429006,Cleaned up authentication-proxy rule for the CXSC action on interface interface_name for traffic destined to ip_address for policy_type service-policy.
+4,429007,CXSC redirect will override Scansafe redirect for flow from interface_name :ip_address /port to interface_name :ip_address /port with username
+4,429008,Unable to respond to VPN query from CX for session 0x%x . Reason %s
+5,4302310,SCTP packet received from src_ifc:src_ip/src_port to dst_ifc:dst_ip/dst_port contains unsupported Hostname Parameter.
+4,431001,RTP conformance: Dropping RTP packet from in_ifc :src_ip /src_port to out_ifc :dest_ip /dest_port , Drop reason: drop_reason value
+4,431002,RTCP conformance: Dropping RTCP packet from in_ifc :src_ip /src_port to out_ifc :dest_ip /dest_port , Drop reason: drop_reason value
+4,434001,SFR card not up and fail-close mode used, dropping protocol packet from ingress interface:source IP address /source port to egress interface :destination IP address /destination port
+4,434002,SFR requested to drop protocol packet from ingress interface :source IP address /source port to egress interface :destination IP address /destination port
+4,434003,SFR requested to reset TCP connection from ingress interface :source IP address /source port to egress interface :destination IP address /destination port
+5,434004,SFR requested ASA to bypass further packet redirection and process flow from %s:%A/%d to %s:%A/%d locally
+4,434007,SFR redirect will override Scansafe redirect for flow from ingress interface :source IP address /source port to egress interface :destination IP address /destination port (user )
+2,444004,Temporary license key key has expired. Applying permanent license key permkey
+4,444005,Timebased activation key activation -key will expire in num days
+2,444007,Timebased activation key activation -key has expired. Reverting to [permanent | timebased] license key. The following features will be affected: feature , feature
+4,444008,%s license has expired, and the system is scheduled to reload in x days. Apply a new activation key to enable %s license and prevent the automatic reload.
+2,444009,%s license has expired 30 days ago. The system will now reload.
+5,444100,Shared request request failed. Reason: reason
+5,444101,Shared license service is active. License server address: address
+2,444102,Shared license service inactive. License server is not responding.
+6,444103,Shared licensetype license usage is over 90% capacity.
+6,444104,Shared licensetype license availability: value .
+2,444105,Released value shared licensetype license(s). License server has been unreachable for 24 hours.
+4,444106,Shared license backup server address is not available.
+6,444107,Shared license service status on interface ifname .
+6,444108,Shared license state client id id .
+4,444109,Shared license backup server role changed to state .
+4,444110,Shared license server backup has days remaining as active license server.
+2,444111,Shared license backup service has been terminated due to the primary license server address being unavailable for more than days days. The license server needs to be brought back online to continue using shared licensing.
+2,444302,%SMART_LIC-2-PLATFORM_ERROR: Platform error.
+3,444303,%SMART_LIC-3-AGENT_REG_FAILED: Smart Agent for licensing registration with Cisco licensing cloud failed.
+4,444304,%SMART_LIC-4-IN_OVERAGE: One or more entitlements are in overage.
+5,444305,%SMART_LIC-5-SYSTEM_CLOCK_CHANGED: Smart Agent for Licensing System clock has been changed.
+6,444306,%SMART_LIC-6-AGENT_READY: Smart Agent for Licensing is initialized.
+7,444307,%SMART_LIC-7-DAILY_JOB_TIMER_RESET: Daily job timer reset.
+4,446001,Maximum TLS Proxy session limit of max_sess reached.
+4,446003,Denied TLS Proxy session from src_int :src_ip /src_port to dst_int :dst_ip /dst_port , UC-IME license is disabled.
+4,447001,ASP DP to CP queue_name was full. Queue length length , limit limit
+4,448001,Denied SRTP crypto session setup on flow from src_int :src_ip /src_port to dst_int :dst_ip /dst_port , licensed K8 SRTP crypto session of limit exceeded
+4,450001,Deny traffic for protocol protocol_id src interface_name :IP_address /port dst interface_name :IP_address /port , licensed host limit of num exceeded.5,500001,ActiveX content in java script is modified: src src ip dest dest ip on interface interface name
+5,500002,Java content in java script is modified: src src ip dest dest ip on interface interface name
+5,500003,Bad TCP hdr length (hdrlen=bytes , pktlen=bytes ) from source_address /source_port to dest_address /dest_port , flags: tcp_flags , on interface interface_name
+4,500004,Invalid transport field for protocol=protocol , from source_address /source_port to dest_address /dest_port
+3,500005,connection terminated for protocol from in_ifc_name :src_adddress /src_port to out_ifc_name :dest_address /dest_port due to invalid combination of inspections on same flow. Inspect inspect_name is not compatible with filter filter_name .
+5,501101,User transitioning priv level
+5,502101,New user added to local dbase: Uname: user Priv: privilege_level Encpass: string
+5,502102,User deleted from local dbase: Uname: user Priv: privilege_level Encpass: string
+5,502103,User priv level changed: Uname: user From: privilege_level To: privilege_level
+5,502111,New group policy added: name: policy_name Type: policy_type
+5,502112,Group policy deleted: name: policy_name Type: policy_type
+5,503001,Process number, Nbr IP_address on interface_name from string to string , reason
+5,503002,The last key has expired for interface nameif, packets sent using last valid key.
+5,503003,Packet sent | received on interface nameif with expired Key ID key-id.
+5,503004,Key ID key-id in key chain key-chain-name does not have a key.
+5,503005,Key ID key-id in key chain key-chain-name does not have a cryptographic algorithm.
+5,503101,Process d , Nbr i on s from s to s , s
+5,504001,Security context context_name was added to the system
+5,504002,Security context context_name was removed from the system
+5,505001,Module string one is shutting down. Please wait...
+5,505002,Module ips is reloading. Please wait...
+5,505003,Module string one is resetting. Please wait...
+5,505004,Module string one shutdown is complete.
+5,505005,Module module_name is initializing control communication. Please wait...
+5,505006,Module string one is Up.
+5,505007,Module module_id is recovering. Please wait...
+5,505008,Module module_id software is being updated to newver (currently ver )
+5,505009,Module string one software was updated to newver
+5,505010,Module in slot slot removed.
+1,505011,Module ips , data channel communication is UP.
+5,505012,Module module_id , application stopped application , version version
+5,505013,Module module_id application changed from: application version version to: newapplication version newversion .
+1,505014,Module module_id , application down name , version version reason
+1,505015,Module module_id , application up application , version version
+3,505016,Module module_id application changed from: name version version state state to: name version state state .
+5,506001,event_source_string event_string
+5,507001,Terminating TCP-Proxy connection from interface_inside:source_address/source_port to interface_outside :dest_address /dest_port - reassembly limit of limit bytes exceeded
+4,507002,Data copy in proxy-mode exceeded the buffer limit
+3,507003,The flow of type protocol from the originating interface: src_ip /src_port to dest_if :dest_ip /dest_port terminated by inspection engine, reason-
+5,508001,DCERPC message_type non-standard version_type version version_number from src_if :src_ip /src_port to dest_if :dest_ip /dest_port , terminating connection.
+5,508002,DCERPC response has low endpoint port port_number from src_if :src_ip /src_port to dest_if :dest_ip /dest_port , terminating connection.
+5,509001,Connection attempt from src_intf :src_ip /src_port [([idfw_user | FQDN_string ], sg_info )] to dst_intf :dst_ip /dst_port [([idfw_user | FQDN_string ], sg_info )] was prevented by "no forward" command.
+3,520001,error_string
+3,520002,bad new ID table size
+3,520003,bad id in error_string (id: 0xid_num)
+3,520004,error_string
+3,520005,error_string
+3,520010,Bad queue elem – qelem_ptr : flink flink_ptr , blink blink_ptr , flink-blink flink_blink_ptr , blink-flink blink_flink_ptr
+3,520011,Null queue elem
+3,520013,Regular expression access check with bad list acl_ID
+3,520020,No memory available
+3,520021,Error deleting trie entry, error_message
+3,520022,Error adding mask entry, error_message
+3,520023,Invalid pointer to head of tree, 0x radix_node_ptr
+3,520024,Orphaned mask #radix_mask_ptr, refcount= radix_mask_ptr’s ref count at #radix_node_address, next= #radix_node_nxt
+3,520025,No memory for radix initialization: err_msg6,602101,PMTU-D packet number bytes greater than effective mtu number dest_addr=dest_address , src_addr=source_address , prot=protocol
+6,602103,IPSEC: Received an ICMP Destination Unreachable from src_addr with suggested PMTU of rcvd_mtu; PMTU updated for SA with peer peer_addr, SPI spi, tunnel name username, old PMTU old_mtu, new PMTU new_mtu.
+6,602104,IPSEC: Received an ICMP Destination Unreachable from src_addr , PMTU is unchanged because suggested PMTU of rcvd_mtu is equal to or greater than the current PMTU of curr_mtu , for SA with peer peer_addr , SPI spi , tunnel name username .
+6,602303,IPSEC: An direction tunnel_type SA (SPI=spi ) between local_IP and remote_IP (username ) has been created.
+6,602304,IPSEC: An direction tunnel_type SA (SPI=spi ) between local_IP and remote_IP (username ) has been deleted.
+3,602305,IPSEC: SA creation error, source source address , destination destination address , reason error string
+3,602306,IPSEC: SA change peer IP error, SPI: IPsec SPI, (src {original src IP address | original src port}, dest {original dest IP address| original dest port} => src {new src IP address | new src port}, dest: {new dest IP address | new dest port}), reason failure reason
+6,603101,PPTP received out of seq or duplicate pkt, tnl_id=number , sess_id=number , seq=number .
+6,603102,PPP virtual interface interface_name - user: user aaa authentication started.
+6,603103,PPP virtual interface interface_name - user: user aaa authentication status
+6,603104,PPTP Tunnel created, tunnel_id is number , remote_peer_ip is remote_address , ppp_virtual_interface_id is number , client_dynamic_ip is IP_address , username is user , MPPE_key_strength is string
+6,603105,PPTP Tunnel deleted, tunnel_id = number , remote_peer_ip= remote_address
+6,603106,L2TP Tunnel created, tunnel_id is number , remote_peer_ip is remote_address , ppp_virtual_interface_id is number , client_dynamic_ip is IP_address , username is user
+6,603107,L2TP Tunnel deleted, tunnel_id = number , remote_peer_ip = remote_address
+6,603108,Built PPTP Tunnel at interface_name , tunnel-id = number , remote-peer = IP_address , virtual-interface = number , client-dynamic-ip = IP_address , username = user , MPPE-key-strength = number
+6,603109,Teardown PPPOE Tunnel at interface_name , tunnel-id = number , remote-peer = IP_address
+4,603110,Failed to establish L2TP session, tunnel_id = tunnel_id , remote_peer_ip = peer_ip , user = username . Multiple sessions per tunnel are not supported
+6,604101,DHCP client interface interface_name : Allocated ip = IP_address , mask = netmask , gw = gateway_address
+6,604102,DHCP client interface interface_name : address released
+6,604103,DHCP daemon interface interface_name : address granted MAC_address (IP_address )
+6,604104,DHCP daemon interface interface_name : address released build_number (IP_address )
+4,604105,DHCPD: Unable to send DHCP reply to client hardware_address on interface interface_name . Reply exceeds options field size (options_field_size ) by number_of_octets octets.
+6,604201,DHCPv6 PD client on interface <pd-client-iface> received delegated prefix <prefix> from DHCPv6 PD server <server-address> with preferred lifetime <in-seconds> seconds and valid lifetime <in-seconds> seconds.
+6,604202,DHCPv6 PD client on interface <pd-client-iface> releasing delegated prefix <prefix> received from DHCPv6 PD server <server-address>.
+6,604203,DHCPv6 PD client on interface <pd-client-iface> renewed delegated prefix <prefix> from DHCPv6 PD server <server-address> with preferred lifetime <in-seconds> seconds and valid lifetime <in-seconds> seconds.
+6,604204,DHCPv6 delegated prefix <delegated prefix> got expired on interface <pd-client-iface>, received from DHCPv6 PD server <server-address>.
+6,604205,DHCPv6 client on interface <client-iface> allocated address <ipv6-address> from DHCPv6 server <server-address> with preferred lifetime <in-seconds> seconds and valid lifetime <in-seconds> seconds
+6,604206,DHCPv6 client on interface <client-iface> releasing address <ipv6-address> received from DHCPv6 server <server-address>.
+6,604207,DHCPv6 client on interface <client-iface> renewed address <ipv6-address> from DHCPv6 server <server-address> with preferred lifetime <in-seconds> seconds and valid lifetime <in-seconds> seconds.
+6,604208,DHCPv6 client address <ipv6-address> got expired on interface <client-iface>, received from DHCPv6 server <server-address>
+6,605004,Login denied from source-address/source-port to interface:destination/service for user “username ”
+6,605005,Login permitted from source-address /source-port to interface:destination /service for user “username ”
+6,606001,ASDM session number number from IP_address started
+6,606002,ASDM session number number from IP_address ended
+6,606003,ASDM logging session number id from IP_address started id session ID assigned
+6,606004,ASDM logging session number id from IP_address ended
+6,607001,Pre-allocate SIP connection_type secondary channel for interface_name:IP_address/port to interface_name:IP_address from string message
+4,607002,action_class : action SIP req_resp req_resp_info from src_ifc :sip /sport to dest_ifc :dip /dport ; further_info
+6,607003,action_class : Received SIP req_resp req_resp_info from src_ifc :sip /sport to dest_ifc :dip /dport ; further_info
+4,607004,Phone Proxy: Dropping SIP message from src_if:src_ip /src_port to dest_if :dest_ip /dest_port with source MAC mac_address due to secure phone database mismatch.
+6,608001,Pre-allocate Skinny connection_type secondary channel for interface_name:IP_address to interface_name:IP_address from string message
+4,608002,Dropping Skinny message for in_ifc :src_ip /src_port to out_ifc :dest_ip /dest_port , SCCP Prefix length value too small
+4,608003,Dropping Skinny message for in_ifc :src_ip /src_port to out_ifc :dest_ip /dest_port , SCCP Prefix length value too large
+4,608004,Dropping Skinny message for in_ifc :src_ip /src_port to out_ifc :dest_ip /dest_port , message id value not allowed
+4,608005,Dropping Skinny message for in_ifc :src_ip /src_port to out_ifc :dest_ip /dest_port , message id value registration not complete
+7,609001,Built local-host zone-name/* :ip-address
+7,609002,Teardown local-host zone-name/* :ip-address duration time
+3,610001,NTP daemon interface interface_name : Packet denied from IP_address
+3,610002,NTP daemon interface interface_name : Authentication failed for packet from IP_address
+6,610101,Authorization failed: Cmd: command Cmdtype: command_modifier
+6,611101,User authentication succeeded: IP, IP address : Uname: user
+6,611102,User authentication failed: IP = IP address, Uname: user
+5,611103,User logged out: Uname: user
+5,611104,Serial console idle timeout exceeded
+6,611301,VPNClient: NAT configured for Client Mode with no split tunneling: NAT address: mapped_address
+6,611302,VPNClient: NAT exemption configured for Network Extension Mode with no split tunneling
+6,611303,VPNClient: NAT configured for Client Mode with split tunneling: NAT address: mapped_address Split Tunnel Networks: IP_address/netmask IP_address/netmask
+6,611304,VPNClient: NAT exemption configured for Network Extension Mode with split tunneling: Split Tunnel Networks: IP_address/netmask IP_address/netmask
+6,611305,VPNClient: DHCP Policy installed: Primary DNS: IP_address Secondary DNS: IP_address Primary WINS: IP_address Secondary WINS: IP_address
+6,611306,VPNClient: Perfect Forward Secrecy Policy installed
+6,611307,VPNClient: Head end: IP_address
+6,611308,VPNClient: Split DNS Policy installed: List of domains: string string
+6,611309,VPNClient: Disconnecting from head end and uninstalling previously downloaded policy: Head End: IP_address
+6,611310,VNPClient: XAUTH Succeeded: Peer: IP_address
+6,611311,VNPClient: XAUTH Failed: Peer: IP_address
+6,611312,VPNClient: Backup Server List: reason
+3,611313,VPNClient: Backup Server List Error: reason
+6,611314,VPNClient: Load Balancing Cluster with Virtual IP: IP_address has redirected the to server IP_address
+6,611315,VPNClient: Disconnecting from Load Balancing Cluster member IP_address
+6,611316,VPNClient: Secure Unit Authentication Enabled
+6,611317,VPNClient: Secure Unit Authentication Disabled
+6,611318,VPNClient: User Authentication Enabled: Auth Server IP: IP_address Auth Server Port: port Idle Timeout: time
+6,611319,VPNClient: User Authentication Disabled
+6,611320,VPNClient: Device Pass Thru Enabled
+6,611321,VPNClient: Device Pass Thru Disabled
+6,611322,VPNClient: Extended XAUTH conversation initiated when SUA disabled
+6,611323,VPNClient: Duplicate split nw entry
+5,612001,Auto Update succeeded:filename , version:number
+4,612002,Auto Update failed:filename , version:number , reason:reason
+4,612003,Auto Update failed to contact:url , reason:reason
+6,613001,Checksum Failure in database in area string Link State Id IP_address Old Checksum number New Checksum number
+6,613002,interface interface_name has zero bandwidth
+6,613003,IP_address netmask changed from area string to area string
+3,613004,Internal error: memory allocation failure
+3,613005,Flagged as being an ABR without a backbone area
+3,613006,Reached unknown state in neighbor state machine
+3,613007,area string lsid IP_address mask netmask type number
+3,613008,if inside if_state number
+3,613011,OSPF process number is changing router-id. Reconfigure virtual link neighbors with our new router-id
+3,613013,OSPF LSID IP_address adv IP_address type number gateway IP_address metric number forwarding addr route IP_address/mask type number has no corresponding LSA
+6,613014,Base topology enabled on interface string attached to MTR compatible mode area string
+4,613015,Process 1 flushes LSA ID IP_address type-number adv-rtr IP_address in area mask
+3,613016,Area string router-LSA of length number bytes plus update overhead bytes is too large to flood.
+4,613017,Bad LSA mask: Type number, LSID IP_address Mask mask from IP_address
+4,613018,Maximum number of non self-generated LSA has been exceeded “OSPF number” - number LSAs
+4,613019,Threshold for maximum number of non self-generated LSA has been reached "OSPF number" - number LSAs
+4,613021,Packet not written to the output queue
+4,613022,Doubly linked list linkage is NULL
+4,613023,Doubly linked list prev linkage is NULL number
+4,613024,Unrecognized timer number in OSPF string
+4,613025,Invalid build flag number for LSA IP_address, type number
+4,613026,Can not allocate memory for area structure
+6,613027,OSPF process number removed from interface interface_name
+6,613028,Unrecognized virtual interface intetface_name. Treat it as loopback stub route
+3,613029,Router-ID IP_address is in use by ospf process number
+4,613030,Router is currently an ASBR while having only one area which is a stub area
+4,613031,No IP address for interface inside
+3,613032,Init failed for interface inside, area is being deleted. Try again.
+3,613033,Interface inside is attached to more than one area
+3,613034,Neighbor IP_address not configured
+3,613035,Could not allocate or find neighbor IP_address
+4,613036,Can not use configured neighbor: cost and database-filter options are allowed only for a point-to-multipoint network
+4,613037,Can not use configured neighbor: poll and priority options are allowed only for a NBMA network
+4,613038,Can not use configured neighbor: cost or database-filter option is required for point-to-multipoint broadcast network
+4,613039,Can not use configured neighbor: neighbor command is allowed only on NBMA and point-to-multipoint networks
+4,613040,OSPF-1 Area string: Router IP_address originating invalid type number LSA, ID IP_address, Metric number on Link ID IP_address Link Type number
+6,613041,OSPF-100 Areav string: LSA ID IP_address, Type number, Adv-rtr IP_address, LSA counter DoNotAge
+4,613042,OSPF process number lacks forwarding address for type 7 LSA IP_address in NSSA string - P-bit cleared
+6,613043,
+6,613101,Checksum Failure in database in area s Link State Id i Old Checksum #x New Checksum #x
+6,613102,interface s has zero bandwidth
+6,613103,i m changed from area AREA_ID_STR to area AREA_ID_STR
+6,613104,Unrecognized virtual interface IF_NAME .
+6,614001,Split DNS: request patched from server: IP_address to server: IP_address
+6,614002,Split DNS: reply from server:IP_address reverse patched back to original server:IP_address
+6,615001,vlan number not available for firewall interface
+6,615002,vlan number available for firewall interface
+6,616001,Pre-allocate MGCP data_channel connection for inside_interface :inside_address to outside_interface :outside_address /port from message_type message
+6,617001,GTPv version msg_type from source_interface :source_address /source_port not accepted by source_interface :dest_address /dest_port
+6,617002,Removing v1 PDP Context with TID tid from GGSN IP_address and SGSN IP_address , Reason: reason or Removing v1 primary |secondary PDP Context with TID tid from GGSN IP_address and SGSN IP_address , Reason: reason
+6,617003,GTP Tunnel created from source_interface :source_address /source_port to source_interface :dest_address /dest_port
+6,617004,GTP connection created for response from source_interface :source_address /0 to source_interface :dest_address /dest_port
+6,617100,Teardown num_conns connection(s) for user user_ip
+6,618001,Denied STUN packet <msg_type> from <ingress_ifc>:<source_addr>/<source_port> to <egress_ifc>:<destination_addr>/<destination_port> for connection <conn_id>, <drop_reason>
+6,620001,Pre-allocate CTIQBE {RTP | RTCP} secondary channel for interface_name :outside_address [/outside_port ] to interface_name :inside_address [/inside_port ] from CTIQBE_message_name message
+4,620002,Unsupported CTIQBE version: hex: from interface_name :IP_address /port to interface_name :IP_address /port
+6,621001,Interface interface_name does not support multicast, not enabled
+6,621002,Interface interface_name does not support multicast, not enabled
+6,621003,The event queue size has exceeded number
+6,621006,Mrib disconnected, (IP_address ,IP_address ) event cancelled
+6,621007,Bad register from interface_name :IP_address to IP_address for (IP_address , IP_address )
+6,622001,string tracked route network mask address , distance number , table string , on interface interface-name
+6,622101,Starting regex table compilation for match_command ; table entries = regex_num entries
+6,622102,Completed regex table compilation for match_command ; table size = num bytes7,701001,alloc_user() out of Tcp_user objects
+7,701002,alloc_user() out of Tcp_proxy objects
+3,702305,IPSEC: An direction tunnel_type SA (SPI=spi ) between local_IP and remote_IP (username ) is rekeying due to sequence number rollover.
+7,702307,IPSEC: An direction tunnel_type SA (SPI=spi ) between local_IP and remote_IP (username ) is rekeying due to data rollover.
+7,703001,H.225 message received from interface_name :IP_address /port to interface_name :IP_address /port is using an unsupported version number
+7,703002,Received H.225 Release Complete with newConnectionNeeded for interface_name :IP_address to interface_name :IP_address /port
+7,703008,Allowing early-message: %s before SETUP from %s:%Q/%d to %s:%Q/%d
+7,709001,FO replication failed: cmd=command returned=code
+1,709003,(Primary) Beginning configuration replication: Sending to mate.
+1,709004,(Primary) End Configuration Replication (ACT)
+1,709005,(Primary) Beginning configuration replication: Receiving from mate.
+1,709006,(Primary) End Configuration Replication (STB)
+2,709007,Configuration replication failed for command
+4,709008,(Primary | Secondary) Configuration sync in progress. Command: ‘command ’ executed from (terminal/http) will not be replicated to or executed by the standby unit.
+7,710001,TCP access requested from source_address /source_port to interface_name :dest_address /service
+7,710002,{TCP|UDP} access permitted from source_address /source_port to interface_name :dest_address /service
+3,710003,{TCP|UDP} access denied by ACL from source_IP/source_port to interface_name :dest_IP/service
+7,710004,TCP connection limit exceeded from Src_ip /Src_port to In_name :Dest_ip /Dest_port (current connections/connection limit = Curr_conn/Conn_lmt)
+7,710005,{TCP|UDP|SCTP} request discarded from source_address /source_port to interface_name :dest_address /service
+7,710006,protocol request discarded from source_address to interface_name :dest_address
+7,710007,NAT-T keepalive received from 86.1.161.1/1028 to outside:86:1.129.1/4500
+7,711001,debug_trace_msg
+4,711002,Task ran for elapsed_time msecs, process = process_name , PC = PC Tracebeback = traceback
+7,711003,Unknown/Invalid interface identifier(vpifnum ) detected.
+4,711004,Task ran for msec msec, Process = process_name , PC = pc , Call stack = call stack
+5,711005,Traceback: call_stack
+7,711006,CPU profiling has started for n-samples samples. Reason: reason-string .
+3,713004,device scheduled for reboot or shutdown, IKE key acquire message on interface interface num , for Peer IP_address ignored
+5,713201,Duplicate Phase Phase packet detected. Action
+6,713202,Duplicate IP_addr packet detected.
+5,713006,Failed to obtain state for message Id message_number , Peer Address: IP_address
+3,713008,Key ID in ID payload too big for pre-shared IKE tunnel
+3,713009,OU in DN in ID payload too big for Certs IKE tunnel
+5,713010,IKE area: failed to find centry for message Id message_number
+3,713012,Unknown protocol (protocol ). Not adding SA w/spi=SPI value
+3,713014,Unknown Domain of Interpretation (DOI): DOI value
+3,713016,Unknown identification type, Phase 1 or 2, Type ID_Type
+3,713017,Identification type not supported, Phase 1 or 2, Type ID_Type
+3,713018,Unknown ID type during find of group name for certs, Type ID_Type
+3,713020,No Group found by matching OU(s) from ID payload: OU_value
+3,713022,No Group found matching peer_ID or IP_address for Pre-shared key peer IP_address
+7,713024,Group group IP ip Received local Proxy Host data in ID Payload: Address IP_address , Protocol protocol , Port port
+7,713025,Received remote Proxy Host data in ID Payload: Address IP_address , Protocol protocol , Port port
+7,713028,Received local Proxy Range data in ID Payload: Addresses IP_address - IP_address , Protocol protocol , Port port
+7,713029,Received remote Proxy Range data in ID Payload: Addresses IP_address - IP_address , Protocol protocol , Port port
+3,713032,Received invalid local Proxy Range IP_address - IP_address
+3,713033,Received invalid remote Proxy Range IP_address - IP_address
+7,713034,Received local IP Proxy Subnet data in ID Payload: Address IP_address , Mask netmask , Protocol protocol , Port port
+7,713035,Group group IP ip Received remote IP Proxy Subnet data in ID Payload: Address IP_address , Mask netmask , Protocol protocol , Port port
+7,713039,Send failure: Bytes (number ), Peer: IP_address
+7,713040,Could not find connection entry and can not encrypt: msgid message_number
+5,713041,IKE Initiator: new or rekey Phase 1 or 2, Intf interface_number , IKE Peer IP_address local Proxy Address IP_address , remote Proxy Address IP_address , Crypto map (crypto map tag )
+3,713042,IKE Initiator unable to find policy: Intf interface_number , Src: source_address , Dst: dest_address
+3,713043,Cookie/peer address IP_address session already in progress
+3,713048,Error processing payload: Payload ID: id
+5,713049,Security negotiation complete for tunnel_type type (group_name ) Initiator /Responder , Inbound SPI = SPI , Outbound SPI = SPI
+5,713050,Connection terminated for peer IP_address . Reason: termination reason Remote Proxy IP_address , Local Proxy IP_address
+7,713052,User (user ) authenticated.
+3,713056,Tunnel rejected: SA (SA_name ) not found for group (group_name )!
+3,713060,Tunnel Rejected: User (user ) not member of group (group_name ), group-lock check failed.
+3,713061,Tunnel rejected: Crypto Map Policy not found for Src:source_address , Dst: dest_address !
+3,713062,IKE Peer address same as our interface address IP_address
+3,713063,IKE Peer address not configured for destination IP_address
+3,713065,IKE Remote Peer did not negotiate the following: proposal attribute
+7,713066,IKE Remote Peer configured for SA: SA_name
+5,713068,Received non-routine Notify message: notify_type (notify_value)
+3,713072,Password for user (user ) too long, truncating to number characters
+5,713073,Responder forcing change of Phase 1 /Phase 2 rekeying duration from larger_value to smaller_value seconds
+5,713074,Responder forcing change of IPsec rekeying duration from larger_value to smaller_value Kbs
+5,713075,Overriding Initiator's IPsec rekeying duration from larger_value to smaller_value seconds
+5,713076,Overriding Initiator's IPsec rekeying duration from larger_value to smaller_value Kbs
+2,713078,Temp buffer for building mode config attributes exceeded: bufsize available_size , used value
+3,713081,Unsupported certificate encoding type encoding_type
+3,713082,Failed to retrieve identity certificate
+3,713083,Invalid certificate handle
+3,713084,Received invalid phase 1 port value (port ) in ID payload
+3,713085,Received invalid phase 1 protocol (protocol ) in ID payload
+3,713086,Received unexpected Certificate payload Possible invalid Auth Method (Auth method (auth numerical value))
+3,713088,Set Cert filehandle failure: no IPsec SA in group group_name
+5,713092,Failure during phase 1 rekeying attempt due to collision
+7,713094,Cert validation failure: handle invalid for Main /Aggressive Mode Initiator /Responder !
+3,713098,Aborting: No identity cert specified in IPsec SA (SA_name )!
+7,713099,Tunnel Rejected: Received NONCE length number is out of range!
+3,713102,Phase 1 ID Data length number too long - reject tunnel!
+7,713103,Invalid (NULL) secret key detected while computing hash
+7,713104,Attempt to get Phase 1 ID data failed while hash computation
+3,713105,Zero length data in ID payload received during phase 1 or 2 processing
+3,713107,IP_Address request attempt failed!
+3,713109,Unable to process the received peer certificate
+3,713112,Failed to process CONNECTED notify (SPI SPI_value )!
+7,713113,Deleting IKE SA with associated IPsec connection entries. IKE peer: IP_address , SA address: internal_SA_address , tunnel count: count
+7,713114,Connection entry (conn entry internal address) points to IKE SA (SA_internal_address ) for peer IP_address , but cookies don't match
+5,713115,Client rejected NAT enabled IPsec request, falling back to standard IPsec
+7,713117,Received Invalid SPI notify (SPI SPI_Value )!
+3,713118,Detected invalid Diffie-Helmann group_descriptor group_number , in IKE area
+5,713119,Group group IP ip PHASE 1 COMPLETED
+5,713120,PHASE 2 COMPLETED (msgid=msg_id )
+7,713121,Keep-alive type for this connection: keepalive_type
+3,713122,Keep-alives configured keepalive_type but peer IP_address support keep-alives (type = keepalive_type )
+3,713123,IKE lost contact with remote peer, deleting connection (keepalive type: keepalive_type )
+3,713124,Received DPD sequence number rcv_sequence_# in DPD Action, description expected seq #
+3,713127,Xauth required but selected Proposal does not support xauth, Check priorities of ike xauth proposals in ike proposal list
+6,713128,Connection attempt to VCPIP redirected to VCA peer IP_address via load balancing
+3,713129,Received unexpected Transaction Exchange payload type: payload_id
+5,713130,Received unsupported transaction mode attribute: attribute id
+5,713131,Received unknown transaction mode attribute: attribute_id
+3,713132,Cannot obtain an IP_address for remote peer
+3,713133,Mismatch: Overriding phase 2 DH Group(DH group DH group_id ) with phase 1 group(DH group DH group_number
+3,713134,Mismatch: P1 Authentication algorithm in the crypto map entry different from negotiated algorithm for the L2L connection
+5,713135,message received, redirecting tunnel to IP_address .
+5,713136,IKE session establishment timed out [IKE_state_name ], aborting!
+5,713137,Reaper overriding refCnt [ref_count] and tunnelCnt [tunnel_count] -- deleting SA!
+3,713138,Group group_name not found and BASE GROUP default preshared key not configured
+5,713139,group_name not found, using BASE GROUP default preshared key
+3,713140,Split Tunneling Policy requires network list but none configured
+3,713141,Client-reported firewall does not match configured firewall: action tunnel. Received -- Vendor: vendor(id) , Product product(id) , Caps: capability_value . Expected -- Vendor: vendor(id) , Product: product(id) , Caps: capability_value
+3,713142,Client did not report firewall in use, but there is a configured firewall: action tunnel. Expected -- Vendor: vendor(id) , Product product(id) , Caps: capability_value
+7,713143,Processing firewall record. Vendor: vendor(id) , Product: product(id) , Caps: capability_value , Version Number: version_number , Version String: version_text
+5,713144,Ignoring received malformed firewall record; reason - error_reason TLV type attribute_value correction
+6,713145,Detected Hardware Client in network extension mode, adding static route for address: IP_address , mask: netmask
+3,713146,Could not add route for Hardware Client in network extension mode, address: IP_address , mask: netmask
+6,713147,Terminating tunnel to Hardware Client in network extension mode, deleting static route for address: IP_address , mask: netmask
+5,713148,Terminating tunnel to Hardware Client in network extension mode, unable to delete static route for address: IP_address , mask: netmask
+3,713149,Hardware client security attribute attribute_name was enabled but not requested.
+3,713152,Unable to obtain any rules from filter ACL_tag to send to client for CPP, terminating connection.
+4,713154,DNS lookup for peer_description Server [server_name ] failed!
+5,713155,DNS lookup for Primary VPN Server [server_name ] successfully resolved after a previous failure. Resetting any Backup Server init.
+5,713156,Initializing Backup Server [server_name or IP_address ]
+4,713157,Timed out on initial contact to server [server_name or IP_address ] Tunnel could not be established.
+5,713158,Client rejected NAT enabled IPsec Over UDP request, falling back to IPsec Over TCP
+3,713159,TCP Connection to Firewall Server has been lost, restricted tunnels are now allowed full network access
+7,713160,Remote user (session Id - id ) has been granted access by the Firewall Server
+3,713161,Remote user (session Id - id ) network access has been restricted by the Firewall Server
+3,713162,Remote user (session Id - id ) has been rejected by the Firewall Server
+3,713163,Remote user (session Id - id ) has been terminated by the Firewall Server
+7,713164,The Firewall Server has requested a list of active user sessions
+3,713165,Client IKE Auth mode differs from the group's configured Auth mode
+3,713166,Headend security gateway has failed our user authentication attempt - check configured username and password
+3,713167,Remote peer has failed user authentication - check configured username and password
+3,713168,Re-auth enabled, but tunnel must be authenticated interactively!
+7,713169,IKE Received delete for rekeyed SA IKE peer: IP_address , SA address: internal_SA_address , tunnelCnt: tunnel_count
+7,713170,Group group IP ip IKE Received delete for rekeyed centry IKE peer: IP_address , centry address: internal_address , msgid: id
+7,713171,NAT-Traversal sending NAT-Original-Address payload
+6,713172,Automatic NAT Detection Status: Remote end is |is not behind a NAT device This end is |is not behind a NAT device
+3,713174,Hardware Client connection rejected! Network Extension Mode is not allowed for this group!
+2,713176,Device_type memory resources are critical, IKE key acquire message on interface interface_number , for Peer IP_address ignored
+6,713177,Received remote Proxy Host FQDN in ID Payload: Host Name: host_name Address IP_address , Protocol protocol , Port port
+5,713178,IKE Initiator received a packet from its peer without a Responder cookie
+5,713179,IKE AM Initiator received a packet from its peer without a payload_type payload
+3,713182,IKE could not recognize the version of the client! IPsec Fragmentation Policy will be ignored for this connection!
+6,713184,Client Type: Client_type Client Application Version: Application_version_string
+3,713185,Error: Username too long - connection aborted
+3,713186,Invalid secondary domain name list received from the authentication server. List Received: list_text Character index (value ) is illegal
+7,713187,Tunnel Rejected: IKE peer does not match remote peer as defined in L2L policy IKE peer address: IP_address , Remote peer address: IP_address
+3,713189,Attempted to assign network or broadcast IP_address , removing ( IP_address ) from pool.
+7,713190,Got bad refCnt ( ref_count_value ) assigning IP_address ( IP_address )
+3,713191,Maximum concurrent IKE negotiations exceeded!
+3,713193,Received packet with missing payload, Expected payload: payload_id
+3,713194,Sending IKE |IPsec Delete With Reason message: termination_reason
+3,713195,Tunnel rejected: Originate-Only: Cannot accept incoming tunnel yet!
+5,713196,Remote L2L Peer IP_address initiated a tunnel with same outer and inner addresses. Peer could be Originate Only - Possible misconfiguration!
+5,713197,The configured Confidence Interval of number seconds is invalid for this tunnel_type connection. Enforcing the second default.
+3,713198,User Authorization failed: user User authorization failed. Username could not be found in the certificate
+5,713199,Reaper corrected an SA that has not decremented the concurrent IKE negotiations counter ( counter_value )!
+3,713203,IKE Receiver: Error reading from socket.
+7,713204,Adding static route for client address: IP_address
+3,713205,Could not add static route for client address: IP_address
+3,713206,Tunnel Rejected: Conflicting protocols specified by tunnel-group and group-policy
+4,713207,Terminating connection: IKE Initiator and tunnel group specifies L2TP Over IPSec
+3,713208,Cannot create dynamic rule for Backup L2L entry rule rule_id
+3,713209,Cannot delete dynamic rule for Backup L2L entry rule id
+3,713210,Cannot create dynamic map for Backup L2L entry rule_id
+6,713211,Adding static route for L2L peer coming in on a dynamic map. address: IP_address , mask: netmask
+3,713212,Could not add route for L2L peer coming in on a dynamic map. address: IP_address , mask: netmask
+6,713213,Deleting static route for L2L peer that came in on a dynamic map. address: IP_address , mask: netmask
+3,713214,Could not delete route for L2L peer that came in on a dynamic map. address: IP_address , mask: netmask
+6,713215,No match against Client Type and Version rules. Client: type version is /is not allowed by default
+5,713216,Rule: action [Client type]: version Client: type version allowed/not allowed
+3,713217,Skipping unrecognized rule: action: action client type: client_type client version: client_version
+3,713218,Tunnel Rejected: Client Type or Version not allowed.
+6,713219,Queuing KEY-ACQUIRE messages to be processed when P1 SA is complete.
+6,713220,De-queuing KEY-ACQUIRE messages that were left pending.
+7,713221,Static Crypto Map check, checking map = crypto_map_tag , seq = seq_number...
+7,713222,Group group Username username IP ip Static Crypto Map check, map = crypto_map_tag , seq = seq_number , ACL does not match proxy IDs src:source_address dst:dest_address
+7,713223,Static Crypto Map check, map = crypto_map_tag , seq = seq_number , no ACL configured
+7,713224,Static Crypto Map Check by-passed: Crypto map entry incomplete!
+7,713225,[IKEv1], Static Crypto Map check, map map_name , seq = sequence_number is a successful match
+3,713226,Connection failed with peer IP_address , no trust-point defined in tunnel-group tunnel_group
+3,713227,Rejecting new IPsec SA negotiation for peer Peer_address . A negotiation was already in progress for local Proxy Local_address /Local_netmask , remote Proxy Remote_address /Remote_netmask
+6,713228,Group = group , Username = uname , IP = remote_IP_address Assigned private IP address assigned_private_IP to remote user
+5,713229,Auto Update - Notification to client client_ip of update string: message_string .
+3,713230,Internal Error, ike_lock trying to lock bit that is already locked for type type
+3,713231,Internal Error, ike_lock trying to unlock bit that is not locked for type type
+3,713232,SA lock refCnt = value , bitmask = hexvalue , p1_decrypt_cb = value , qm_decrypt_cb = value , qm_hash_cb = value , qm_spi_ok_cb = value , qm_dh_cb = value , qm_secret_key_cb = value , qm_encrypt_cb = value
+7,713233,(VPN-unit ) Remote network (remote network ) validated for network extension mode.
+7,713234,(VPN-unit) Remote network (remote network ) from network extension mode client mismatches AAA configuration (aaa network ).
+6,713235,Attempt to send an IKE packet from standby unit. Dropping the packet!
+7,713236,IKE_DECODE tx/rx Message (msgid=msgid) with payloads:payload1 (payload1_len) + payload2 (payload2_len)...total length: tlen
+5,713237,ACL update (access_list ) received during re-key re-authentication will not be applied to the tunnel.
+3,713238,Invalid source proxy address: 0.0.0.0! Check private address on remote client
+4,713239,IP_Address : Tunnel Rejected: The maximum tunnel count allowed has been reached
+4,713240,Received DH key with bad length: received length=rlength expected length=elength
+4,713241,IE Browser Proxy Method setting_number is Invalid
+4,713242,Remote user is authenticated using Hybrid Authentication. Not starting IKE rekey.
+4,713243,META-DATA Unable to find the requested certificate
+4,713244,META-DATA Received Legacy Authentication Method(LAM) type type is different from the last type received type .
+4,713245,META-DATA Unknown Legacy Authentication Method(LAM) type type received.
+4,713246,META-DATA Unknown Legacy Authentication Method(LAM) attribute type type received.
+4,713247,META-DATA Unexpected error: in Next Card Code mode while not doing SDI.
+5,713248,META-DATA Rekey initiation is being disabled during CRACK authentication.
+4,713249,META-DATA Received unsupported authentication results: result
+5,713250,META-DATA Received unknown Internal Address attribute: attribute
+4,713251,META-DATA Received authentication failure message
+5,713252,Group = group , Username = user , IP = ip , Integrity Firewall Server is not available. VPN Tunnel creation rejected for client.
+5,713253,Group = group , Username = user , IP = ip , Integrity Firewall Server is not available. Entering ALLOW mode. VPN Tunnel created for client.
+3,713254,Group = groupname , Username = username , IP = peerip , Invalid IPsec/UDP port = portnum , valid range is minport - maxport , except port 4500, which is reserved for IPsec/NAT-T
+4,713255,IP = peer-IP , Received ISAKMP Aggressive Mode message 1 with unknown tunnel group name group-name
+6,713256,IP = peer-IP , Sending spoofed ISAKMP Aggressive Mode message 2 due to receipt of unknown tunnel group. Aborting connection.
+5,713257,Phase var1 failure: Mismatched attribute types for class var2 : Rcv'd: var3 Cfg'd: var4
+3,713258,IP = var1 , Attempting to establish a phase2 tunnel on var2 interface but phase1 tunnel is on var3 interface. Tearing down old phase1 tunnel due to a potential routing change.
+5,713259,Group = groupname , Username = username , IP = peerIP , Session is being torn down. Reason: reason
+3,713260,Output interface %d to peer was not found
+3,713261,IPV6 address on output interface %d was not found
+3,713262,Rejecting new IPSec SA negotiation for peer Peer_address . A negotiation was already in progress for local Proxy Local_address /Local_prefix_len , remote Proxy Remote_address /Remote_prefix_len
+7,713263,Received local IP Proxy Subnet data in ID Payload: Address IP_address , Mask /prefix_len , Protocol protocol , Port port
+7,713264,Received local IP Proxy Subnet data in ID Payload: Address IP_address , Mask/prefix_len , Protocol protocol , Port port {“Received remote IP Proxy Subnet data in ID Payload: Address %a , Mask/%d , Protocol %u , Port %u ”}
+6,713265,Adding static route for L2L peer coming in on a dynamic map. address: IP_address , mask: /prefix_len
+3,713266,Could not add route for L2L peer coming in on a dynamic map. address: IP_address , mask: /prefix_len
+6,713267,Deleting static route for L2L peer that came in on a dynamic map. address: IP_address , mask: /prefix_len
+3,713268,Could not delete route for L2L peer that came in on a dynamic map. address: IP_address , mask: /prefix_len
+6,713269,Detected Hardware Client in network extension mode, adding static route for address: IP_address , mask: /prefix_len
+3,713270,Could not add route for Hardware Client in network extension mode, address: IP_address , mask: /prefix_len
+6,713271,Terminating tunnel to Hardware Client in network extension mode, deleting static route for address: IP_address , mask:/prefix_len
+3,713272,Terminating tunnel to Hardware Client in network extension mode, unable to delete static route for address: IP_address , mask: /prefix_len
+7,713273,Deleting static route for client address: IP_Address IP_Address address of client whose route is being removed
+3,713274,Could not delete static route for client address: IP_Address IP_Address address of client whose route is being removed
+3,713275,IKEv1 Unsupported certificate keytype %s found at trustpoint %s
+3,713276,Dropping new negotiation - IKEv1 in-negotiation context limit of %u reached
+1,713900,Descriptive_event_string.
+2,713901,Descriptive_event_string .
+3,713902,Descriptive_event_string.
+4,713903,IKE error message reason reason.
+5,713904,Descriptive_event_string .
+6,713905,Descriptive_event_string.
+7,713906,Descriptive_event_string .
+7,714001,description_of_event_or_packet
+7,714002,IKE Initiator starting QM: msg id = message_number
+7,714003,IKE Responder starting QM: msg id = message_number
+7,714004,IKE Initiator sending 1st QM pkt: msg id = message_number
+7,714005,IKE Responder sending 2nd QM pkt: msg id = message_number
+7,714006,IKE Initiator sending 3rd QM pkt: msg id = message_number
+7,714007,IKE Initiator sending Initial Contact
+7,714011,Description of received ID values7,715001,Descriptive statement
+7,715004,subroutine name () Q Send failure: RetCode (return_code )
+7,715005,subroutine name() Bad message code: Code (message_code )
+7,715006,IKE got SPI from key engine: SPI = SPI_value
+7,715007,IKE got a KEY_ADD msg for SA: SPI = SPI_value
+7,715008,Could not delete SA SA_address, refCnt = number , caller = calling_subroutine_address
+7,715009,IKE Deleting SA: Remote Proxy IP_address , Local Proxy IP_address
+7,715013,Tunnel negotiation in progress for destination IP_address , discarding data
+7,715018,IP Range type id was loaded: Direction %s,  From: %a, Through: %a
+7,715019,Group group Username username IP ip IKEGetUserAttributes: Attribute name = name
+7,715020,construct_cfg_set: Attribute name = name
+7,715021,Delay Quick Mode processing, Cert/Trans Exch/RM DSID in progress
+7,715022,Resume Quick Mode processing, Cert/Trans Exch/RM DSID completed
+7,715027,IPsec SA Proposal # chosen_proposal , Transform # chosen_transform acceptable Matches global IPsec SA entry # crypto_map_index
+7,715028,IKE SA Proposal # 1, Transform # chosen_transform acceptable Matches global IKE entry # crypto_map_index
+7,715031,Obtained IP addr (%s) prior to initiating Mode Cfg (XAuth %s)
+7,715032,Sending subnet mask (%s) to remote client
+7,715033,Processing CONNECTED notify (MsgId message_number )
+7,715034,action IOS keep alive payload: proposal=time 1 /time 2 sec.
+7,715035,Starting IOS keepalive monitor: seconds sec.
+7,715036,Sending keep-alive of type notify_type (seq number number )
+7,715037,Unknown IOS Vendor ID version: major.minor.variance
+7,715038,action Spoofing_information Vendor ID payload (version: major.minor.variance , capabilities: value )
+7,715039,Unexpected cleanup of tunnel table entry during SA delete.
+7,715040,Deleting active auth handle during SA deletion: handle = internal_authentication_handle
+7,715041,Received keep-alive of type keepalive_type , not the negotiated type
+7,715042,IKE received response of type failure_type to a request from the IP_address utility
+7,715044,Ignoring Keepalive payload from vendor not support KeepAlive capability
+7,715045,ERROR: malformed Keepalive payload
+7,715046,Group = groupname , Username = username , IP = IP_address , constructing payload_description payload
+7,715047,processing payload_description payload
+7,715048,Send VID_type VID
+7,715049,Received VID_type VID
+7,715050,Claims to be IOS but failed authentication
+7,715051,Received unexpected TLV type TLV_type while processing FWTYPE ModeCfg Reply
+7,715052,Old P1 SA is being deleted but new SA is DEAD, cannot transition centries
+7,715053,MODE_CFG: Received request for attribute_info !
+7,715054,MODE_CFG: Received attribute_name reply: value
+7,715055,Send attribute_name
+7,715056,Client is configured for TCP_transparency
+7,715057,Auto-detected a NAT device with NAT-Traversal. Ignoring IPsec-over-UDP configuration.
+7,715058,NAT-Discovery payloads missing. Aborting NAT-Traversal.
+7,715059,Proposing/Selecting only UDP-Encapsulated-Tunnel and UDP-Encapsulated-Transport modes defined by NAT-Traversal
+7,715060,Dropped received IKE fragment. Reason: reason
+7,715061,Rcv'd fragment from a new fragmentation set. Deleting any old fragments.
+7,715062,Error assembling fragments! Fragment numbers are non-continuous.
+7,715063,Successfully assembled an encrypted pkt from rcv'd fragments!
+7,715064,-- IKE Peer included IKE fragmentation capability flags: Main Mode: true /false Aggressive Mode: true /false
+7,715065,IKE state_machine subtype FSM error history (struct data_structure_address ) state , event : state /event pairs
+7,715066,Can't load an IPsec SA! The corresponding IKE SA contains an invalid logical ID.
+7,715067,QM IsRekeyed: existing sa from different peer, rejecting new sa
+7,715068,QM IsRekeyed: duplicate sa found by address , deleting old sa
+7,715069,Invalid ESP SPI size of SPI_size
+7,715070,Invalid IPComp SPI size of SPI_size
+7,715071,AH proposal not supported
+7,715072,Received proposal with unknown protocol ID protocol_ID
+7,715074,Could not retrieve authentication attributes for peer IP_address
+7,715075,Group = group_name , IP = IP_address Received keep-alive of type message_type (seq number number )
+7,715076,Computing hash for ISAKMP
+7,715077,Pitcher: msg string , spi spi
+7,715078,Received %s LAM attribute
+7,715079,INTERNAL_ADDRESS: Received request for %s
+7,715080,VPN: Starting P2 rekey timer: 28800 seconds.
+6,716001,Group group User user IP ip WebVPN session started.
+6,716002,Group GroupPolicy User username IP ip WebVPN session terminated: User requested.
+6,716003,Group group User user IP ip WebVPN access “GRANTED: url ”
+6,716004,Group group User user WebVPN access DENIED to specified location: url
+6,716005,Group group User user WebVPN ACL Parse Error: reason
+6,716006,Group name User user WebVPN session terminated. Idle timeout.
+4,716007,Group group User user WebVPN Unable to create session.
+7,716008,WebVPN ACL: action
+6,716009,Group group User user WebVPN session not allowed. WebVPN ACL parse error.
+7,716010,Group group User user Browse network.
+7,716011,Group group User user Browse domain domain .
+7,716012,Group group User user Browse directory directory .
+7,716013,Group group User user Close file filename .
+7,716014,Group group User user View file filename .
+7,716015,Group group User user Remove file filename .
+7,716016,Group group User user Rename file old_filename to new_filename .
+7,716017,Group group User user Modify file filename .
+7,716018,Group group User user Create file filename .
+7,716019,Group group User user Create directory directory .
+7,716020,Group group User user Remove directory directory .
+7,716021,File access DENIED, filename .
+4,716022,Unable to connect to proxy server reason .
+4,716023,Group name User user Session could not be established: session limit of maximum_sessions reached.
+7,716024,Group name User user Unable to browse the network.Error: description
+7,716025,Group name User user Unable to browse domain domain . Error: description
+7,716026,Group name User user Unable to browse directory directory . Error: description
+7,716027,Group name User user Unable to view file filename . Error: description
+7,716028,Group name User user Unable to remove file filename . Error: description
+7,716029,Group name User user Unable to rename file filename . Error: description
+7,716030,Group name User user Unable to modify file filename . Error: description
+7,716031,Group name User user Unable to create file filename . Error: description
+7,716032,Group name User user Unable to create folder folder . Error: description
+7,716033,Group name User user Unable to remove folder folder . Error: description
+7,716034,Group name User user Unable to write to file filename .
+7,716035,Group name User user Unable to read file filename .
+7,716036,Group name User user File Access: User user logged into the server server.
+7,716037,Group name User user File Access: User user failed to login into the server server.
+6,716038,Group group User user IP ip Authentication: successful, Session Type: WebVPN.
+6,716039,Authentication: rejected, group = name user = user , Session Type: %s
+6,716040,Reboot pending, new sessions disabled. Denied user login.
+6,716041,access-list acl_ID action url url hit_cnt count
+6,716042,access-list acl_ID action tcp source_interface /source_address (source_port ) - dest_interface /dest_address (dest_port ) hit-cnt count
+6,716043,Group group-name , User user-name , IP IP_address : WebVPN Port Forwarding Java applet started. Created new hosts file mappings.
+4,716044,Group group-name User user-name IP IP_address AAA parameter param-name value param-value out of range.
+4,716045,Group group-name User user-name IP IP_address AAA parameter param-name value invalid.
+4,716046,Group group-name User user-name IP IP_address User ACL access-list-name from AAA doesn't exist on the device, terminating connection.
+4,716047,Group group-name User user-name IP IP_address User ACL access-list-name from AAA ignored, AV-PAIR ACL used instead.
+4,716048,Group group-name User user-name IP IP_address No memory to parse ACL.
+6,716049,Group group-name User user-name IP IP_address Empty SVC ACL.
+6,716050,Error adding to ACL: ace_command_line
+6,716051,Group group-name User user-name IP IP_address Error adding dynamic ACL for user.
+4,716052,Group group-name User user-name IP IP_address Pending session terminated.
+5,716053,SSO Server added: name: name Type: type
+5,716054,SSO Server deleted: name: name Type: type
+6,716055,Group group-name User user-name IP IP_address Authentication to SSO server name: name type type succeeded
+3,716056,Group group-name User user-name IP IP_address Authentication to SSO server name: name type type failed reason: reason
+3,716057,Group group User user IP ip Session terminated, no type license available.
+6,716058,Group group User user IP ip AnyConnect session lost connection. Waiting to resume.
+6,716059,Group group User user IP ip AnyConnect session resumed. Connection from ip2 .
+6,716060,Group group User user IP ip Terminated AnyConnect session in inactive state to accept a new connection. License limit reached.
+3,716061,Group DfltGrpPolicy User user IP ip addr IPv6 User Filter tempipv6 configured for AnyConnect. This setting has been deprecated, terminating connection
+2,716500,internal error in: function : Fiber library cannot locate AK47 instance
+2,716501,internal error in: function : Fiber library cannot attach AK47 instance
+2,716502,internal error in: function : Fiber library cannot allocate default arena
+2,716503,internal error in: function : Fiber library cannot allocate fiber descriptors pool
+2,716504,internal error in: function : Fiber library cannot allocate fiber stacks pool
+2,716505,internal error in: function : Fiber has joined fiber in unfinished state
+2,716506,UNICORN_SYSLOGID_JOINED_UNEXPECTED_FIBER
+1,716507,Fiber scheduler has reached unreachable code. Cannot continue, terminating.
+1,716508,internal error in: function : Fiber scheduler is scheduling rotten fiber. Cannot continuing terminating
+1,716509,internal error in: function : Fiber scheduler is scheduling alien fiber. Cannot continue terminating
+1,716510,internal error in: function : Fiber scheduler is scheduling finished fiber. Cannot continue terminating
+2,716512,internal error in: function : Fiber has joined fiber waited upon by someone else
+2,716513,internal error in: function : Fiber in callback blocked on other channel
+2,716515,internal error in: function : OCCAM failed to allocate memory for AK47 instance
+1,716516,internal error in: function : OCCAM has corrupted ROL array. Cannot continue terminating
+2,716517,internal error in: function : OCCAM cached block has no associated arena
+2,716518,internal error in: function : OCCAM pool has no associated arena
+1,716519,internal error in: function : OCCAM has corrupted pool list. Cannot continue terminating
+2,716520,internal error in: function : OCCAM pool has no block list
+2,716521,internal error in: function : OCCAM no realloc allowed in named pool
+2,716522,internal error in: function : OCCAM corrupted standalone block
+2,716525,UNICORN_SYSLOGID_SAL_CLOSE_PRIVDATA_CHANGED
+2,716526,UNICORN_SYSLOGID_PERM_STORAGE_SERVER_LOAD_FAIL
+2,716527,UNICORN_SYSLOGID_PERM_STORAGE_SERVER_STORE_FAIL
+1,716528,Unexpected fiber scheduler error; possible out-of-memory condition
+3,716600,Rejected size-recv KB Hostscan data from IP src-ip . Hostscan results exceed default | configured limit of size-conf KB.
+3,716601,Rejected size-recv KB Hostscan data from IP src-ip . System-wide limit on the amount of Hostscan data stored on FTD exceeds the limit of data-max KB.
+3,716602,Memory allocation error. Rejected size-recv KB Hostscan data from IP src-ip .
+7,716603,Received size-recv KB Hostscan data from IP src-ip .
+3,717001,Querying keypair failed.
+3,717002,Certificate enrollment failed for trustpoint trustpoint_name. Reason: reason_string .
+6,717003,Certificate received from Certificate Authority for trustpoint trustpoint_name .
+6,717004,PKCS #12 export failed for trustpoint trustpoint_name .
+6,717005,PKCS #12 export succeeded for trustpoint trustpoint_name .
+6,717006,PKCS #12 import failed for trustpoint trustpoint_name .
+6,717007,PKCS #12 import succeeded for trustpoint trustpoint_name .
+2,717008,Insufficient memory to process_requiring_memory.
+3,717009,Certificate validation failed. Reason: reason_string .
+3,717010,CRL polling failed for trustpoint trustpoint_name .
+2,717011,Unexpected event event event_ID
+3,717012,Failed to refresh CRL cache entry from the server for trustpoint trustpoint_name at time_of_failure
+5,717013,Removing a cached CRL to accommodate an incoming CRL. Issuer: issuer
+5,717014,Unable to cache a CRL received from CDP due to size limitations (CRL size = size , available cache space = space )
+3,717015,CRL received from issuer is too large to process (CRL size = crl_size , maximum CRL size = max_crl_size )
+6,717016,Removing expired CRL from the CRL cache. Issuer: issuer
+3,717017,Failed to query CA certificate for trustpoint trustpoint_name from enrollment_url
+3,717018,CRL received from issuer has too many entries to process (number of entries = number_of_entries , maximum number allowed = max_allowed )
+3,717019,Failed to insert CRL for trustpoint trustpoint_name . Reason: failure_reason .
+3,717020,Failed to install device certificate for trustpoint label . Reason: reason string .
+3,717021,Certificate data could not be verified. Locate Reason: reason_string serial number: serial number , subject name: subject name , key length key length bits.
+6,717022,Certificate was successfully validated. certificate_identifiers
+3,717023,SSL failed to set device certificate for trustpoint trustpoint name . Reason: reason_string .
+7,717024,Checking CRL from trustpoint: trustpoint name for purpose
+7,717025,Validating certificate chain containing number of certs certificate(s).
+4,717026,Name lookup failed for hostname hostname during PKI operation.
+3,717027,Certificate chain failed validation. reason_string .
+6,717028,Certificate chain was successfully validated additional info .
+7,717029,Identified client certificate within certificate chain. serial number: serial_number , subject name: subject_name .
+7,717030,Found a suitable trustpoint trustpoint name to validate certificate.
+4,717031,Failed to find a suitable trustpoint for the issuer: issuer Reason: reason_string
+6,717033,OCSP response status - Successful.
+7,717034,No-check extension found in certificate. OCSP check bypassed.
+4,717035,OCSP status is being checked for certificate. certificate_identifier.
+7,717036,Looking for a tunnel group match based on certificate maps for peer certificate with certificate_identifier .
+4,717037,Tunnel group search using certificate maps failed for peer certificate: certificate_identifier .
+7,717038,Tunnel group match found. Tunnel Group: tunnel_group_name , Peer certificate: certificate_identifier .
+3,717039,Local CA Server internal error detected: error.
+2,717040,Local CA Server has failed and is being disabled. Reason: reason.
+7,717041,Local CA Server event: event info .
+3,717042,Failed to enable Local CA Server.Reason: reason .
+6,717043,Local CA Server certificate enrollment related info for user: user . Info: info .
+3,717044,Local CA server certificate enrollment related error for user: user . Error: error .
+7,717045,Local CA Server CRL info: info
+3,717046,Local CA Server CRL error: error .
+6,717047,Revoked certificate issued to user: username, with serial number serial number .
+6,717048,Unrevoked certificate issued to user: username, with serial number serial number .
+1,717049,Local CA Server certificate is due to expire in number days and a replacement certificate is available for export.
+5,717050,SCEP Proxy: Processed request type type from IP client ip address , User username , TunnelGroup tunnel_group name , GroupPolicy group-policy name to CA IP ca ip address
+3,717051,SCEP Proxy: Denied processing the request type type received from IP client ip address , User username , TunnelGroup tunnel group name , GroupPolicy group policy name to CA ca ip address . Reason: msg
+4,717052,Group group name User user name IP IP Address Session disconnected due to periodic certificate authentication failure. Subject Name id subject name Issuer Name id issuer name Serial Number id serial number
+5,717053,Group group name User user name IP IP Address Periodic certificate authentication succeeded. Subject Name id subject name Issuer Name id issuer name Serial Number id serial number
+1,717054,The type certificate in the trustpoint tp name is due to expire in number days. Expiration date and time Subject Name subject name Issuer Name issuer name Serial Number serial number
+1,717055,The type certificate in the trustpoint tp name has expired. Expiration date and time Subject Name subject name Issuer Name issuer name Serial Number serial number
+6,717056,Attempting type revocation check from Src Interface :Src IP /Src Port to Dst IP /Dst Port using protocol
+3,717057,Automatic import of trustpool certificate bundle has failed. < Maximum retry attempts reached. Failed to reach CA server> | <Cisco root bundle signature validation failed> | <Failed to update trustpool bundle in flash> | <Failed to install trustpool bundle in memory>
+6,717058,Automatic import of trustpool certificate bundle is successful: <No change in trustpool bundle> | <Trustpool updated in flash>.
+6,717059,Peer certificate with serial number: <serial>, subject: <subject_name>, issuer: <issuer_name> matched the configured certificate map <map_name>
+3,717060,Peer certificate with serial number: <serial>, subject: <subject_name>, issuer: <issuer_name> failed to match the configured certificate map <map_name>
+5,717061,Starting protocol certificate enrollment for the trustpoint tpname with the CA ca_name. Request Type type Mode mode
+5,717062,protocol Certificate enrollment succeeded for the trustpoint tpname with the CA ca. Received a new certificate with Subject Name subject Issuer Name issuer Serial Number serial
+3,717063,protocol Certificate enrollment failed for the trustpoint tpname with the CA ca
+5,717064,Keypair keyname in the trustpoint tpname is regenerated for mode protocol certificate renewal
+7,718001,Internal interprocess communication queue send failure: code error_code
+5,718002,Create peer IP_address failure, already at maximum of number_of_peers
+6,718003,Got unknown peer message message_number from IP_address , local version version_number , remote version version_number
+6,718004,Got unknown internal message message_number
+5,718005,Fail to send to IP_address , port port
+5,718006,Invalid load balancing state transition [cur=state_number ][event=event_number ]
+5,718007,Socket open failure failure_code
+5,718008,Socket bind failure failure_code
+5,718009,Send HELLO response failure to IP_address
+5,718010,Sent HELLO response to IP_address
+5,718011,Send HELLO request failure to IP_address
+5,718012,Sent HELLO request to IP_address
+6,718013,Peer IP_address is not answering HELLO
+5,718014,Master peer IP_address is not answering HELLO
+5,718015,Received HELLO request from IP_address
+5,718016,Received HELLO response from IP_address
+7,718017,Got timeout for unknown peer IP_address msg type message_type
+7,718018,Send KEEPALIVE request failure to IP_address
+7,718019,Sent KEEPALIVE request to IP_address
+7,718020,Send KEEPALIVE response failure to IP_address
+7,718021,Sent KEEPALIVE response to IP_address
+7,718022,Received KEEPALIVE request from IP_address
+7,718023,Received KEEPALIVE response from IP_address
+5,718024,Send CFG UPDATE failure to IP_address
+7,718025,Sent CFG UPDATE to IP_address
+7,718026,Received CFG UPDATE from IP_address
+6,718027,Received unexpected KEEPALIVE request from IP_address
+5,718028,Send OOS indicator failure to IP_address
+7,718029,Sent OOS indicator to IP_address
+6,718030,Received planned OOS from IP_address
+5,718031,Received OOS obituary for IP_address
+5,718032,Received OOS indicator from IP_address
+5,718033,Send TOPOLOGY indicator failure to IP_address
+7,718034,Sent TOPOLOGY indicator to IP_address
+7,718035,Received TOPOLOGY indicator from IP_address
+7,718036,Process timeout for req-type type_value , exid exchange_ID , peer IP_address
+6,718037,Master processed number_of_timeouts timeouts
+6,718038,Slave processed number_of_timeouts timeouts
+6,718039,Process dead peer IP_address
+6,718040,Timed-out exchange ID exchange_ID not found
+7,718041,Timeout [msgType=type ] processed with no callback
+5,718042,Unable to ARP for IP_address
+5,718043,Updating/removing duplicate peer entry IP_address
+5,718044,Deleted peer IP_address
+5,718045,Created peer IP_address
+7,718046,Create group policy policy_name
+7,718047,Fail to create group policy policy_name
+5,718048,Create of secure tunnel failure for peer IP_address
+7,718049,Created secure tunnel to peer IP_address
+5,718050,Delete of secure tunnel failure for peer IP_address
+6,718051,Deleted secure tunnel to peer IP_address
+5,718052,Received GRAT-ARP from duplicate master MAC_address
+5,718053,Detected duplicate master, mastership stolen MAC_address
+5,718054,Detected duplicate master MAC_address and going to SLAVE
+5,718055,Detected duplicate master MAC_address and staying MASTER
+7,718056,Deleted Master peer, IP IP_address
+5,718057,Queue send failure from ISR, msg type failure_code
+7,718058,State machine return code: action_routine , return_code
+7,718059,State machine function trace: state=state_name , event=event_name , func=action_routine
+5,718060,Inbound socket select fail: context=context_ID .
+5,718061,Inbound socket read fail: context=context_ID .
+5,718062,Inbound thread is awake (context=context_ID ).
+5,718063,Interface interface_name is down.
+5,718064,Admin. interface interface_name is down.
+5,718065,Cannot continue to run (public=up /down , private=up /down , enable=LB_state , master=IP_address , session=Enable /Disable ).
+5,718066,Cannot add secondary address to interface interface_name , ip IP_address .
+5,718067,Cannot delete secondary address to interface interface_name , ip IP_address .
+5,718068,Start VPN Load Balancing in context context_ID .
+5,718069,Stop VPN Load Balancing in context context_ID .
+5,718070,Reset VPN Load Balancing in context context_ID .
+5,718071,Terminate VPN Load Balancing in context context_ID .
+5,718072,Becoming master of Load Balancing in context context_ID .
+5,718073,Becoming slave of Load Balancing in context context_ID .
+5,718074,Fail to create access list for peer context_ID .
+5,718075,Peer IP_address access list not set.
+5,718076,Fail to create tunnel group for peer IP_address .
+5,718077,Fail to delete tunnel group for peer IP_address .
+5,718078,Fail to create crypto map for peer IP_address .
+5,718079,Fail to delete crypto map for peer IP_address .
+5,718080,Fail to create crypto policy for peer IP_address .
+5,718081,Fail to delete crypto policy for peer IP_address .
+5,718082,Fail to create crypto ipsec for peer IP_address .
+5,718083,Fail to delete crypto ipsec for peer IP_address .
+5,718084,Public/cluster IP not on the same subnet: public IP_address , mask netmask , cluster IP_address
+5,718085,Interface interface_name has no IP address defined.
+5,718086,Fail to install LB NP rules: type rule_type , dst interface_name , port port .
+5,718087,Fail to delete LB NP rules: type rule_type , rule rule_ID .
+7,718088,Possible VPN LB misconfiguration. Offending device MAC MAC_address .
+6,719001,Email Proxy session could not be established: session limit of maximum_sessions has been reached.
+3,719002,Email Proxy session pointer from source_address has been terminated due to reason error.
+6,719003,Email Proxy session pointer resources have been freed for source_address .
+6,719004,Email Proxy session pointer has been successfully established for source_address .
+7,719005,FSM NAME has been created using protocol for session pointer from source_address .
+7,719006,Email Proxy session pointer has timed out for source_address because of network congestion.
+7,719007,Email Proxy session pointer cannot be found for source_address .
+3,719008,Email Proxy service is shutting down.
+7,719009,Email Proxy service is starting.
+6,719010,protocol Email Proxy feature is disabled on interface interface_name .
+6,719011,Protocol Email Proxy feature is enabled on interface interface_name .
+6,719012,Email Proxy server listening on port port for mail protocol protocol .
+6,719013,Email Proxy server closing port port for mail protocol protocol .
+5,719014,Email Proxy is changing listen port from old_port to new_port for mail protocol protocol .
+7,719015,Parsed emailproxy session pointer from source_address username: mailuser = mail_user , vpnuser = VPN_user , mailserver = server
+7,719016,Parsed emailproxy session pointer from source_address password: mailpass = ******, vpnpass= ******
+6,719017,WebVPN user: vpnuser invalid dynamic ACL.
+6,719018,WebVPN user: vpnuser ACL ID acl_ID not found
+6,719019,WebVPN user: vpnuser authorization failed.
+6,719020,WebVPN user vpnuser authorization completed successfully.
+6,719021,WebVPN user: vpnuser is not checked against ACL.
+6,719022,WebVPN user vpnuser has been authenticated.
+6,719023,WebVPN user vpnuser has not been successfully authenticated. Access denied.
+6,719024,Email Proxy piggyback auth fail: session = pointer user=vpnuser addr=source_address
+6,719025,Email Proxy DNS name resolution failed for hostname .
+6,719026,Email Proxy DNS name hostname resolved to IP_address .
+4,720001,(VPN-unit ) Failed to initialize with Chunk Manager.
+6,720002,(VPN-unit ) Starting VPN Stateful Failover Subsystem...
+6,720003,(VPN-unit ) Initialization of VPN Stateful Failover Component completed successfully
+6,720004,(VPN-unit ) VPN failover main thread started.
+6,720005,(VPN-unit ) VPN failover timer thread started.
+6,720006,(VPN-unit ) VPN failover sync thread started.
+4,720007,(VPN-unit ) Failed to allocate chunk from Chunk Manager.
+4,720008,(VPN-unit ) Failed to register to High Availability Framework.
+4,720009,(VPN-unit ) Failed to create version control block.
+6,720010,(VPN-unit ) VPN failover client is being disabled
+4,720011,(VPN-unit ) Failed to allocate memory
+6,720012,(VPN-unit ) Failed to update IPsec failover runtime data on the standby unit.
+4,720013,(VPN-unit ) Failed to insert certificate in trustpoint trustpoint_name
+6,720014,(VPN-unit ) Phase 2 connection entry (msg_id=message_number , my cookie=mine , his cookie=his ) contains no SA list.
+6,720015,(VPN-unit ) Cannot found Phase 1 SA for Phase 2 connection entry (msg_id=message_number ,my cookie=mine , his cookie=his ).
+5,720016,(VPN-unit) Failed to initialize default timer #index .
+5,720017,(VPN-unit ) Failed to update LB runtime data
+5,720018,(VPN-unit ) Failed to get a buffer from the underlying core high availability subsystem. Error code code.
+5,720019,(VPN-unit ) Failed to update cTCP statistics.
+5,720020,(VPN-unit ) Failed to send type timer message.
+5,720021,(VPN-unit ) HA non-block send failed for peer msg message_number . HA error code .
+4,720022,(VPN-unit ) Cannot find trustpoint trustpoint
+6,720023,(VPN-unit ) HA status callback: Peer is not present.
+6,720024,(VPN-unit ) HA status callback: Control channel is status .
+6,720025,(VPN-unit ) HA status callback: Data channel is status .
+6,720026,(VPN-unit ) HA status callback: Current progression is being aborted.
+6,720027,(VPN-unit ) HA status callback: My state state .
+6,720028,(VPN-unit ) HA status callback: Peer state state .
+6,720029,(VPN-unit ) HA status callback: Start VPN bulk sync state.
+6,720030,(VPN-unit ) HA status callback: Stop bulk sync state.
+7,720031,(VPN-unit ) HA status callback: Invalid event received. event=event_ID .
+6,720032,(VPN-unit) HA status callback: id=ID , seq=sequence_# , grp=group , event=event , op=operand , my=my_state , peer=peer_state .
+4,720033,(VPN-unit ) Failed to queue add to message queue.
+7,720034,(VPN-unit ) Invalid type (type ) for message handler.
+5,720035,(VPN-unit ) Fail to look up CTCP flow handle
+5,720036,(VPN-unit ) Failed to process state update message from the active peer.
+6,720037,(VPN-unit ) HA progression callback: id=id ,seq=sequence_number ,grp=group ,event=event ,op=operand , my=my_state ,peer=peer_state .
+4,720038,(VPN-unit ) Corrupted message from active unit.
+6,720039,(VPN-unit ) VPN failover client is transitioning to active state
+6,720040,(VPN-unit ) VPN failover client is transitioning to standby state.
+7,720041,(VPN-unit ) Sending type message id to standby unit
+7,720042,(VPN-unit ) Receiving type message id from active unit
+4,720043,(VPN-unit ) Failed to send type message id to standby unit
+4,720044,(VPN-unit ) Failed to receive message from active unit
+6,720045,(VPN-unit ) Start bulk syncing of state information on standby unit.
+6,720046,(VPN-unit ) End bulk syncing of state information on standby unit
+4,720047,(VPN-unit ) Failed to sync SDI node secret file for server IP_address on the standby unit.
+7,720048,(VPN-unit ) FSM action trace begin: state=state , last event=event , func=function .
+7,720049,(VPN-unit ) FSM action trace end: state=state , last event=event , return=return , func=function .
+7,720050,(VPN-unit ) Failed to remove timer. ID = id .
+4,720051,(VPN-unit ) Failed to add new SDI node secret file for server id on the standby unit.
+4,720052,(VPN-unit ) Failed to delete SDI node secret file for server id on the standby unit.
+4,720053,(VPN-unit ) Failed to add cTCP IKE rule during bulk sync, peer=IP_address , port=port
+4,720054,(VPN-unit ) Failed to add new cTCP record, peer=IP_address , port=port .
+4,720055,(VPN-unit ) VPN Stateful failover can only be run in single/non-transparent mode.
+6,720056,(VPN-unit ) VPN Stateful failover Message Thread is being disabled.
+6,720057,(VPN-unit ) VPN Stateful failover Message Thread is enabled.
+6,720058,(VPN-unit ) VPN Stateful failover Timer Thread is disabled.
+6,720059,(VPN-unit ) VPN Stateful failover Timer Thread is enabled.
+6,720060,(VPN-unit ) VPN Stateful failover Sync Thread is disabled.
+6,720061,(VPN-unit ) VPN Stateful failover Sync Thread is enabled.
+6,720062,(VPN-unit ) Active unit started bulk sync of state information to standby unit.
+6,720063,(VPN-unit ) Active unit completed bulk sync of state information to standby.
+4,720064,(VPN-unit ) Failed to update cTCP database record for peer=IP_address , port=port during bulk sync.
+4,720065,(VPN-unit ) Failed to add new cTCP IKE rule, peer=peer , port=port .
+4,720066,(VPN-unit ) Failed to activate IKE database.
+4,720067,(VPN-unit ) Failed to deactivate IKE database.
+4,720068,(VPN-unit ) Failed to parse peer message.
+4,720069,(VPN-unit ) Failed to activate cTCP database.
+4,720070,(VPN-unit ) Failed to deactivate cTCP database.
+5,720071,(VPN-unit ) Failed to update cTCP dynamic data.
+5,720072,Timeout waiting for Integrity Firewall Server [interface ,ip ] to become available.
+4,720073,VPN Session failed to replicate - ACL acl_name not found
+6,721001,(device ) WebVPN Failover SubSystem started successfully.(device ) either WebVPN-primary or WebVPN-secondary.
+6,721002,(device ) HA status change: event event , my state my_state , peer state peer .
+6,721003,(device ) HA progression change: event event , my state my_state , peer state peer .
+6,721004,(device ) Create access list list_name on standby unit.
+6,721005,(device ) Fail to create access list list_name on standby unit.
+6,721006,(device ) Update access list list_name on standby unit.
+4,721007,(device ) Fail to update access list list_name on standby unit.
+6,721008,(device ) Delete access list list_name on standby unit.
+6,721009,(device ) Fail to delete access list list_name on standby unit.
+6,721010,(device ) Add access list rule list_name , line line_no on standby unit.
+4,721011,(device ) Fail to add access list rule list_name , line line_no on standby unit.
+6,721012,(device ) Enable APCF XML file file_name on the standby unit.
+4,721013,(device ) Fail to enable APCF XML file file_name on the standby unit.
+6,721014,(device ) Disable APCF XML file file_name on the standby unit.
+4,721015,(device ) Fail to disable APCF XML file file_name on the standby unit.
+6,721016,(device ) WebVPN session for client user user_name , IP ip_address has been created.
+4,721017,(device ) Fail to create WebVPN session for user user_name , IP ip_address .
+6,721018,(device ) WebVPN session for client user user_name , IP ip_address has been deleted.
+4,721019,(device ) Fail to delete WebVPN session for client user user_name , IP ip_address .4,776201,CTS PAC: CTS PAC for Server IP_address , A-ID PAC issuer name will expire in number days
+3,776202,CTS PAC for Server IP_address , A-ID PAC issuer name has expired
+3,776203,Unable to retrieve CTS Environment data due to: reason
+3,776204,CTS Environment data has expired
+6,776251,CTS SGT-MAP: Binding binding IP - SGname (SGT ) from source name added to binding manager.
+5,776252,CTS SGT-MAP: CTS SGT-MAP: Binding binding IP - SGname (SGT ) from source name deleted from binding manager.
+6,776253,CTS SGT-MAP: Binding binding IP - new SGname (SGT ) from new source name changed from old sgt: old SGname (SGT ) from old source old source name .
+3,776254,CTS SGT-MAP: Binding manager unable to action binding binding IP - SGname (SGT ) from source name.
+7,776301,CTS Policy: Security-group tag sgt is mapped to security-group name "sgname "
+7,776302,CTS Policy: Unknown security-group tag sgt referenced in policies
+6,776303,CTS Policy: Security-group name "sgname " is resolved to security-group tag sgt
+4,776304,CTS Policy: Unresolved security-group name "sgname " referenced, policies based on this name will be inactive
+4,776305,CTS Policy: Security-group table cleared, all polices referencing security-group names will be deactivated
+7,776307,CTS Policy: Security-group name for security-group tag sgt renamed from old_sgname " to "new_sgname "
+7,776308,CTS Policy: Previously unknown security-group tag sgt is now mapped to security-group name "sgname "
+5,776309,CTS Policy: Previously known security-group tag sgt is now unknown
+5,776310,CTS Policy: Security-group name "sgname " remapped from security-group tag old_sgt to new_sgt
+6,776311,CTS Policy: Previously unresolved security-group name "sgname " is now resolved to security-group tag sgt
+4,776312,CTS Policy: Previously resolved security-group name "sgname " is now unresolved, policies based on this name will be deactivated
+3,776313,CTS Policy: Failure to update policies for security-group "sgname"-sgt
+6,778001,VXLAN: Invalid VXLAN segment-id segment-id for protocol from ifc-name :(IP-address/port) to ifc-name :(IP-address/port).
+6,778002,VXLAN: There is no VNI interface for segment-id segment-id .
+6,778003,VXLAN: Invalid VXLAN segment-id segment-id for protocol from ifc-name :(IP-address/port) to ifc-name :(IP-address/port) in FP.
+6,778004,VXLAN: Invalid VXLAN header for protocol from ifc-name :(IP-address/port) to ifc-name :(IP-address/port) in FP.
+6,778005,VXLAN: Packet with VXLAN segment-id segment-id from ifc-name is denied by FP L2 check.
+6,778006,VXLAN: Invalid VXLAN UDP checksum from ifc-name :(IP-address/port) to ifc-name :(IP-address/port) in FP.
+6,778007,VXLAN: Packet from ifc-name :IP-address/port to IP-address/port was discarded due to invalid NVE peer.
+6,779001,STS: Out-tag lookup failed for in-tag segment-id of protocol from ifc-name :IP-address /port to IP-address /port .
+6,779002,STS: STS and NAT locate different egress interface for segment-id segment-id , protocol from ifc-name :IP-address /port to IP-address /port
+3,779003,STS: Failed to read tag-switching table - reason
+3,779004,STS: Failed to write tag-switching table - reason
+3,779005,STS: Failed to parse tag-switching request from http - reason
+3,779006,STS: Failed to save tag-switching table to flash - reason
+3,779007,STS: Failed to replicate tag-switching table to peer - reason
+6,780001,RULE ENGINE: Started compilation for access-group transaction - description of the transaction .
+6,780002,RULE ENGINE: Finished compilation for access-group transaction - description of the transaction .
+6,780003,RULE ENGINE: Started compilation for nat transaction - description of the transaction .
+6,780004,RULE ENGINE: Finished compilation for nat transaction - description of the transaction .
+7,785001,Clustering: Ownership for existing flow from <in_interface>:<src_ip_addr>/<src_port> to <out_interface>:<dest_ip_addr>/<dest_port> moved from unit <old-owner-unit-id> at site <old-site-id> to <new-owner-unit-id> at site <old-site-id> due to <reason>.
+6,802005,IP ip_address Received MDM request details
+4,802006,IP ip_address MDM request details has been rejected: details
+6,803001,bypass is continuing after power up, no protection will be provided by the system for traffic over GigabitEthernet 1/1-1/2
+6,803002,no protection will be provided by the system for traffic over GigabitEthernet 1/1-1/2
+6,803003,User disabled bypass manually on GigabitEthernet 1/1-1/2.
+6,804001,Interface GigabitEthernet1/3 1000BaseSX SFP has been inserted
+6,804002,Interface GigabitEthernet1/3 SFP has been removed
+6,805001,Flow offloaded: connection conn_id outside_ifc:outside_addr/outside_port (mapped_addr/mapped_port) inside_ifc:inside_addr/inside_port (mapped_addr/mapped_port) Protocol
+6,805002,Flow is no longer offloaded: connection conn_id outside_ifc:outside_addr/outside_port (mapped_addr/mapped_port) inside_ifc:inside_addr/inside_port (mapped_addr/mapped_port) Protocol
+6,805003,Flow is no longer offloaded: connection conn_id outside_ifc:outside_addr/outside_port (mapped_addr/mapped_port) inside_ifc:inside_addr/inside_port (mapped_addr/mapped_port) Protocol
+6,806001,Primary alarm CPU temperature is High temperature
+6,806002,Primary alarm for CPU high temperature is cleared
+6,806003,Primary alarm CPU temperature is Low temperature
+6,806004,Primary alarm for CPU Low temperature is cleared
+6,806005,Secondary alarm CPU temperature is High temperature
+6,806006,Secondary alarm for CPU high temperature is cleared
+6,806007,Secondary alarm CPU temperature is Low temperature
+6,806008,Secondary alarm for CPU Low temperature is cleared
+6,806009,Alarm asserted for ALARM_IN_1 description
+6,806010,Alarm cleared for ALARM_IN_1 alarm_1_description
+6,806011,Alarm asserted for ALARM_IN_2 description
+6,806012,Alarm cleared for ALARM_IN_2 alarm_2_description
+3,840001,Failed to create the backup for an IKEv2 session <Local IP>, <Remote IP>
+3,850001,SNORT ID (<snort-instance-id>/<snort-process-id>) Automatic-Application-Bypass due to delay of <delay>ms (threshold <AAB-threshold>ms) with <connection-info>
+3,850002,SNORT ID (<snort-instance-id>/<snort-process-id>) Automatic-Application-Bypass due to SNORT not responding to traffics for <timeout-delay>ms(threshold <AAB-threshold>ms)
+6,8300001,VPN session redistribution <variable 1>
+6,8300002,Moved <variable 1> sessions to <variable 2>
+3,8300003,Failed to send session redistribution message to <variable 1>
+6,8300004,<variable 1> request to move <variable 2> sessions from <variable 3> to <variable 4>
+3,8300005,Failed to receive session move response from <variable 1>
+5,8300006,Cluster topology change detected. VPN session redistribution aborted.
